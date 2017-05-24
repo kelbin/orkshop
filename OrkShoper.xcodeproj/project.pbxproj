@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0168DF1EC9F31000339528 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168DE1EC9F31000339528 /* bg.png */; };
+		BC0168E21EC9FA8800339528 /* MarketController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0168E11EC9FA8800339528 /* MarketController.m */; };
+		BC0168E81EC9FF3C00339528 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168E71EC9FF3C00339528 /* map.png */; };
+		BC0168EA1ECA02B700339528 /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168E91ECA02B700339528 /* shop.png */; };
+		BC0229731EBB4A4A00BFDF77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0229721EBB4A4A00BFDF77 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BC06221D1EBF2A9B00A95162 /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC06221C1EBF2A9B00A95162 /* NewsController.m */; };
+		BC0913171EC30AA400D403A1 /* NewsCellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0913161EC30AA400D403A1 /* NewsCellsController.m */; };
+		BC236F061EC88359004EFC7C /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC236F051EC88359004EFC7C /* MapController.m */; };
+		BC236F081EC8882C004EFC7C /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = BC236F071EC8882C004EFC7C /* maps.png */; };
+		BC239A58F56543D180DCA7AF /* libPods-OrkShoper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0752B39B6D15F1EDA7B7B497 /* libPods-OrkShoper.a */; };
+		BC2E01101EC606F200EE8252 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E010F1EC606F200EE8252 /* news.png */; };
+		BC2E01141EC607AA00EE8252 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E01131EC607AA00EE8252 /* home.png */; };
+		BC2E01161EC6138200EE8252 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E01151EC6138200EE8252 /* cart.png */; };
+		BC3EC16E1ECF2B5300871DB6 /* market1ForOrkShop.json in Resources */ = {isa = PBXBuildFile; fileRef = BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */; };
+		BC3EC1711ECF391400871DB6 /* MarketSubTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */; };
+		BC3EC1741ECF611900871DB6 /* GoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3EC1731ECF611900871DB6 /* GoodsController.m */; };
+		BC500DC41EC1F7A500C7D102 /* NewsForOrkShoper.json in Resources */ = {isa = PBXBuildFile; fileRef = BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */; };
+		BC59C8E31EAE47F600E76135 /* mainback4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC59C8E21EAE47F600E76135 /* mainback4.png */; };
+		BC5CFE5B1EB73C53000931E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		BC697AB51EB35BA80044850B /* o3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC697AB41EB35BA80044850B /* o3.png */; };
+		BC9273431EB9F85100BE234A /* orkshop.db in Resources */ = {isa = PBXBuildFile; fileRef = BC9273421EB9F85100BE234A /* orkshop.db */; };
+		BCA4B2241EAF76A600FB22A9 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA4B2231EAF76A600FB22A9 /* SignUpController.m */; };
+		BCCE87BA1EBB98DD00AB26BA /* core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */; };
+		BCE168911EA8B33000CE8694 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168901EA8B33000CE8694 /* main.m */; };
+		BCE168941EA8B33000CE8694 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168931EA8B33000CE8694 /* AppDelegate.m */; };
+		BCE168971EA8B33000CE8694 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168961EA8B33000CE8694 /* ViewController.m */; };
+		BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE1689B1EA8B33000CE8694 /* Assets.xcassets */; };
+		BCE168AA1EA8B33000CE8694 /* OrkShoperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */; };
+		BCE168B51EA8B33000CE8694 /* OrkShoperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */; };
+		CF097F1A4373CB284029B460 /* libPods-OrkShoperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */; };
+		CF67C0552784DB3BF6A191AF /* libPods-OrkShoperUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCE168A61EA8B33000CE8694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCE168841EA8B33000CE8694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE1688B1EA8B33000CE8694;
+			remoteInfo = OrkShoper;
+		};
+		BCE168B11EA8B33000CE8694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCE168841EA8B33000CE8694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE1688B1EA8B33000CE8694;
+			remoteInfo = OrkShoper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021426573EAF444DC628721E /* Pods-OrkShoperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		027FE6C529DD8119801B192D /* Pods-OrkShoperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperTests/Pods-OrkShoperTests.release.xcconfig"; sourceTree = "<group>"; };
+		0752B39B6D15F1EDA7B7B497 /* libPods-OrkShoper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7C2F47442C6A4F6F1CD0A3 /* Pods-OrkShoperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperTests/Pods-OrkShoperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA0DB7DE476A83D955A0F41 /* Pods-OrkShoper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper.debug.xcconfig"; sourceTree = "<group>"; };
+		571C73F3C026D9574DE8E169 /* Pods-OrkShoperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0168DE1EC9F31000339528 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../../../../Downloads/bg.png; sourceTree = "<group>"; };
+		BC0168E01EC9FA8800339528 /* MarketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketController.h; sourceTree = "<group>"; };
+		BC0168E11EC9FA8800339528 /* MarketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketController.m; sourceTree = "<group>"; };
+		BC0168E71EC9FF3C00339528 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../../../Downloads/map.png; sourceTree = "<group>"; };
+		BC0168E91ECA02B700339528 /* shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shop.png; path = ../../../../../Downloads/shop.png; sourceTree = "<group>"; };
+		BC0229721EBB4A4A00BFDF77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BC06221B1EBF2A9B00A95162 /* NewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
+		BC06221C1EBF2A9B00A95162 /* NewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
+		BC0913151EC30AA400D403A1 /* NewsCellsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCellsController.h; sourceTree = "<group>"; };
+		BC0913161EC30AA400D403A1 /* NewsCellsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCellsController.m; sourceTree = "<group>"; };
+		BC236F041EC88359004EFC7C /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		BC236F051EC88359004EFC7C /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		BC236F071EC8882C004EFC7C /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maps.png; path = ../../../../../Downloads/maps.png; sourceTree = "<group>"; };
+		BC2E010F1EC606F200EE8252 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = news.png; path = ../../../../../Downloads/news.png; sourceTree = "<group>"; };
+		BC2E01131EC607AA00EE8252 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/home.png; sourceTree = "<group>"; };
+		BC2E01151EC6138200EE8252 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cart.png; path = ../../../../../Downloads/cart.png; sourceTree = "<group>"; };
+		BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = market1ForOrkShop.json; path = ../../../../../Downloads/market1ForOrkShop.json; sourceTree = "<group>"; };
+		BC3EC16F1ECF391400871DB6 /* MarketSubTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketSubTreeController.h; sourceTree = "<group>"; };
+		BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketSubTreeController.m; sourceTree = "<group>"; };
+		BC3EC1721ECF611900871DB6 /* GoodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsController.h; sourceTree = "<group>"; };
+		BC3EC1731ECF611900871DB6 /* GoodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsController.m; sourceTree = "<group>"; };
+		BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NewsForOrkShoper.json; path = ../../../../../Downloads/NewsForOrkShoper.json; sourceTree = "<group>"; };
+		BC59C8E21EAE47F600E76135 /* mainback4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainback4.png; path = ../../../../../Downloads/mainback4.png; sourceTree = "<group>"; };
+		BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BC697AB41EB35BA80044850B /* o3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = o3.png; path = ../../../../../Downloads/o3.png; sourceTree = "<group>"; };
+		BC9273421EB9F85100BE234A /* orkshop.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = orkshop.db; sourceTree = "<group>"; };
+		BCA4B2221EAF76A600FB22A9 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		BCA4B2231EAF76A600FB22A9 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
+		BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = core.xcdatamodel; sourceTree = "<group>"; };
+		BCE1688C1EA8B33000CE8694 /* OrkShoper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrkShoper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE168901EA8B33000CE8694 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCE168921EA8B33000CE8694 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCE168931EA8B33000CE8694 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCE168951EA8B33000CE8694 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCE168961EA8B33000CE8694 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCE1689B1EA8B33000CE8694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCE168A01EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE168A51EA8B33000CE8694 /* OrkShoperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkShoperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrkShoperTests.m; sourceTree = "<group>"; };
+		BCE168AB1EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE168B01EA8B33000CE8694 /* OrkShoperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkShoperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrkShoperUITests.m; sourceTree = "<group>"; };
+		BCE168B61EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF640F61EB9E7FD00A9DC43 /* OrkShopData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = OrkShopData.db; sourceTree = "<group>"; };
+		EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA11C7DE772922693AE94559 /* Pods-OrkShoper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoper.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCE168891EA8B33000CE8694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0229731EBB4A4A00BFDF77 /* CoreData.framework in Frameworks */,
+				BC5CFE5B1EB73C53000931E1 /* libsqlite3.tbd in Frameworks */,
+				BC239A58F56543D180DCA7AF /* libPods-OrkShoper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168A21EA8B33000CE8694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF097F1A4373CB284029B460 /* libPods-OrkShoperTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168AD1EA8B33000CE8694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF67C0552784DB3BF6A191AF /* libPods-OrkShoperUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85EEEA9CC53802F18E47580C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0DB7DE476A83D955A0F41 /* Pods-OrkShoper.debug.xcconfig */,
+				FA11C7DE772922693AE94559 /* Pods-OrkShoper.release.xcconfig */,
+				1D7C2F47442C6A4F6F1CD0A3 /* Pods-OrkShoperTests.debug.xcconfig */,
+				027FE6C529DD8119801B192D /* Pods-OrkShoperTests.release.xcconfig */,
+				021426573EAF444DC628721E /* Pods-OrkShoperUITests.debug.xcconfig */,
+				571C73F3C026D9574DE8E169 /* Pods-OrkShoperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC5CFE591EB73C53000931E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0229721EBB4A4A00BFDF77 /* CoreData.framework */,
+				BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */,
+				0752B39B6D15F1EDA7B7B497 /* libPods-OrkShoper.a */,
+				EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */,
+				AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCE168831EA8B33000CE8694 = {
+			isa = PBXGroup;
+			children = (
+				BCE1688E1EA8B33000CE8694 /* OrkShoper */,
+				BCE168A81EA8B33000CE8694 /* OrkShoperTests */,
+				BCE168B31EA8B33000CE8694 /* OrkShoperUITests */,
+				BCE1688D1EA8B33000CE8694 /* Products */,
+				BC5CFE591EB73C53000931E1 /* Frameworks */,
+				85EEEA9CC53802F18E47580C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BCE1688D1EA8B33000CE8694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCE1688C1EA8B33000CE8694 /* OrkShoper.app */,
+				BCE168A51EA8B33000CE8694 /* OrkShoperTests.xctest */,
+				BCE168B01EA8B33000CE8694 /* OrkShoperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCE1688E1EA8B33000CE8694 /* OrkShoper */ = {
+			isa = PBXGroup;
+			children = (
+				BCE168921EA8B33000CE8694 /* AppDelegate.h */,
+				BCE168931EA8B33000CE8694 /* AppDelegate.m */,
+				BCE168951EA8B33000CE8694 /* ViewController.h */,
+				BCE168961EA8B33000CE8694 /* ViewController.m */,
+				BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */,
+				BCA4B2221EAF76A600FB22A9 /* SignUpController.h */,
+				BCA4B2231EAF76A600FB22A9 /* SignUpController.m */,
+				BC236F041EC88359004EFC7C /* MapController.h */,
+				BC236F051EC88359004EFC7C /* MapController.m */,
+				BC06221B1EBF2A9B00A95162 /* NewsController.h */,
+				BC06221C1EBF2A9B00A95162 /* NewsController.m */,
+				BC0168E01EC9FA8800339528 /* MarketController.h */,
+				BC0168E11EC9FA8800339528 /* MarketController.m */,
+				BC3EC16F1ECF391400871DB6 /* MarketSubTreeController.h */,
+				BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */,
+				BC3EC1721ECF611900871DB6 /* GoodsController.h */,
+				BC3EC1731ECF611900871DB6 /* GoodsController.m */,
+				BC0913151EC30AA400D403A1 /* NewsCellsController.h */,
+				BC0913161EC30AA400D403A1 /* NewsCellsController.m */,
+				BCF640F61EB9E7FD00A9DC43 /* OrkShopData.db */,
+				BC9273421EB9F85100BE234A /* orkshop.db */,
+				BCE1689B1EA8B33000CE8694 /* Assets.xcassets */,
+				BC697AB41EB35BA80044850B /* o3.png */,
+				BCE168A01EA8B33000CE8694 /* Info.plist */,
+				BC2E01151EC6138200EE8252 /* cart.png */,
+				BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */,
+				BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */,
+				BC0168E71EC9FF3C00339528 /* map.png */,
+				BC2E010F1EC606F200EE8252 /* news.png */,
+				BC236F071EC8882C004EFC7C /* maps.png */,
+				BC2E01131EC607AA00EE8252 /* home.png */,
+				BC0168E91ECA02B700339528 /* shop.png */,
+				BC0168DE1EC9F31000339528 /* bg.png */,
+				BC59C8E21EAE47F600E76135 /* mainback4.png */,
+				BCE1688F1EA8B33000CE8694 /* Supporting Files */,
+			);
+			path = OrkShoper;
+			sourceTree = "<group>";
+		};
+		BCE1688F1EA8B33000CE8694 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCE168901EA8B33000CE8694 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCE168A81EA8B33000CE8694 /* OrkShoperTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */,
+				BCE168AB1EA8B33000CE8694 /* Info.plist */,
+			);
+			path = OrkShoperTests;
+			sourceTree = "<group>";
+		};
+		BCE168B31EA8B33000CE8694 /* OrkShoperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */,
+				BCE168B61EA8B33000CE8694 /* Info.plist */,
+			);
+			path = OrkShoperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCE1688B1EA8B33000CE8694 /* OrkShoper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE168B91EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoper" */;
+			buildPhases = (
+				AEB9E3282C56BDE6D76C077D /* [CP] Check Pods Manifest.lock */,
+				BCE168881EA8B33000CE8694 /* Sources */,
+				BCE168891EA8B33000CE8694 /* Frameworks */,
+				BCE1688A1EA8B33000CE8694 /* Resources */,
+				75C8260387E517F5DCA4C116 /* [CP] Embed Pods Frameworks */,
+				72933293D6E594C7E10455D6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrkShoper;
+			productName = OrkShoper;
+			productReference = BCE1688C1EA8B33000CE8694 /* OrkShoper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCE168A41EA8B33000CE8694 /* OrkShoperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE168BC1EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoperTests" */;
+			buildPhases = (
+				3498E9A4CCBC55042AA18E9A /* [CP] Check Pods Manifest.lock */,
+				BCE168A11EA8B33000CE8694 /* Sources */,
+				BCE168A21EA8B33000CE8694 /* Frameworks */,
+				BCE168A31EA8B33000CE8694 /* Resources */,
+				04C26C01AD37293288180D2D /* [CP] Embed Pods Frameworks */,
+				1E45942653EF9ACB8B2CF090 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCE168A71EA8B33000CE8694 /* PBXTargetDependency */,
+			);
+			name = OrkShoperTests;
+			productName = OrkShoperTests;
+			productReference = BCE168A51EA8B33000CE8694 /* OrkShoperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCE168AF1EA8B33000CE8694 /* OrkShoperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE168BF1EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoperUITests" */;
+			buildPhases = (
+				69320823CCE8FC10A817EE28 /* [CP] Check Pods Manifest.lock */,
+				BCE168AC1EA8B33000CE8694 /* Sources */,
+				BCE168AD1EA8B33000CE8694 /* Frameworks */,
+				BCE168AE1EA8B33000CE8694 /* Resources */,
+				B5F92F9BBFC5E7867C9576DB /* [CP] Embed Pods Frameworks */,
+				9C59BC03E0A5412607075B88 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCE168B21EA8B33000CE8694 /* PBXTargetDependency */,
+			);
+			name = OrkShoperUITests;
+			productName = OrkShoperUITests;
+			productReference = BCE168B01EA8B33000CE8694 /* OrkShoperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCE168841EA8B33000CE8694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Келбин";
+				TargetAttributes = {
+					BCE1688B1EA8B33000CE8694 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					BCE168A41EA8B33000CE8694 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCE1688B1EA8B33000CE8694;
+					};
+					BCE168AF1EA8B33000CE8694 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCE1688B1EA8B33000CE8694;
+					};
+				};
+			};
+			buildConfigurationList = BCE168871EA8B33000CE8694 /* Build configuration list for PBXProject "OrkShoper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCE168831EA8B33000CE8694;
+			productRefGroup = BCE1688D1EA8B33000CE8694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCE1688B1EA8B33000CE8694 /* OrkShoper */,
+				BCE168A41EA8B33000CE8694 /* OrkShoperTests */,
+				BCE168AF1EA8B33000CE8694 /* OrkShoperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCE1688A1EA8B33000CE8694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2E01101EC606F200EE8252 /* news.png in Resources */,
+				BC2E01161EC6138200EE8252 /* cart.png in Resources */,
+				BC0168DF1EC9F31000339528 /* bg.png in Resources */,
+				BC697AB51EB35BA80044850B /* o3.png in Resources */,
+				BC500DC41EC1F7A500C7D102 /* NewsForOrkShoper.json in Resources */,
+				BC0168EA1ECA02B700339528 /* shop.png in Resources */,
+				BC9273431EB9F85100BE234A /* orkshop.db in Resources */,
+				BC3EC16E1ECF2B5300871DB6 /* market1ForOrkShop.json in Resources */,
+				BC0168E81EC9FF3C00339528 /* map.png in Resources */,
+				BC2E01141EC607AA00EE8252 /* home.png in Resources */,
+				BC59C8E31EAE47F600E76135 /* mainback4.png in Resources */,
+				BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */,
+				BC236F081EC8882C004EFC7C /* maps.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168A31EA8B33000CE8694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168AE1EA8B33000CE8694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04C26C01AD37293288180D2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoperTests/Pods-OrkShoperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E45942653EF9ACB8B2CF090 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoperTests/Pods-OrkShoperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3498E9A4CCBC55042AA18E9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69320823CCE8FC10A817EE28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72933293D6E594C7E10455D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C8260387E517F5DCA4C116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C59BC03E0A5412607075B88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB9E3282C56BDE6D76C077D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F92F9BBFC5E7867C9576DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCE168881EA8B33000CE8694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3EC1711ECF391400871DB6 /* MarketSubTreeController.m in Sources */,
+				BCE168971EA8B33000CE8694 /* ViewController.m in Sources */,
+				BCE168941EA8B33000CE8694 /* AppDelegate.m in Sources */,
+				BC3EC1741ECF611900871DB6 /* GoodsController.m in Sources */,
+				BCE168911EA8B33000CE8694 /* main.m in Sources */,
+				BC0168E21EC9FA8800339528 /* MarketController.m in Sources */,
+				BC0913171EC30AA400D403A1 /* NewsCellsController.m in Sources */,
+				BCCE87BA1EBB98DD00AB26BA /* core.xcdatamodeld in Sources */,
+				BCA4B2241EAF76A600FB22A9 /* SignUpController.m in Sources */,
+				BC236F061EC88359004EFC7C /* MapController.m in Sources */,
+				BC06221D1EBF2A9B00A95162 /* NewsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168A11EA8B33000CE8694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE168AA1EA8B33000CE8694 /* OrkShoperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE168AC1EA8B33000CE8694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE168B51EA8B33000CE8694 /* OrkShoperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCE168A71EA8B33000CE8694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE1688B1EA8B33000CE8694 /* OrkShoper */;
+			targetProxy = BCE168A61EA8B33000CE8694 /* PBXContainerItemProxy */;
+		};
+		BCE168B21EA8B33000CE8694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE1688B1EA8B33000CE8694 /* OrkShoper */;
+			targetProxy = BCE168B11EA8B33000CE8694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCE168B71EA8B33000CE8694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE168B81EA8B33000CE8694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCE168BA1EA8B33000CE8694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA0DB7DE476A83D955A0F41 /* Pods-OrkShoper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrkShoper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCE168BB1EA8B33000CE8694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA11C7DE772922693AE94559 /* Pods-OrkShoper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrkShoper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BCE168BD1EA8B33000CE8694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7C2F47442C6A4F6F1CD0A3 /* Pods-OrkShoperTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OrkShoperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrkShoper.app/OrkShoper";
+			};
+			name = Debug;
+		};
+		BCE168BE1EA8B33000CE8694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027FE6C529DD8119801B192D /* Pods-OrkShoperTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OrkShoperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrkShoper.app/OrkShoper";
+			};
+			name = Release;
+		};
+		BCE168C01EA8B33000CE8694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021426573EAF444DC628721E /* Pods-OrkShoperUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = OrkShoperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OrkShoper;
+			};
+			name = Debug;
+		};
+		BCE168C11EA8B33000CE8694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571C73F3C026D9574DE8E169 /* Pods-OrkShoperUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = OrkShoperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Orc.OrkShoperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OrkShoper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCE168871EA8B33000CE8694 /* Build configuration list for PBXProject "OrkShoper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE168B71EA8B33000CE8694 /* Debug */,
+				BCE168B81EA8B33000CE8694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE168B91EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE168BA1EA8B33000CE8694 /* Debug */,
+				BCE168BB1EA8B33000CE8694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE168BC1EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE168BD1EA8B33000CE8694 /* Debug */,
+				BCE168BE1EA8B33000CE8694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE168BF1EA8B33000CE8694 /* Build configuration list for PBXNativeTarget "OrkShoperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE168C01EA8B33000CE8694 /* Debug */,
+				BCE168C11EA8B33000CE8694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */,
+			);
+			currentVersion = BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */;
+			path = core.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BCE168841EA8B33000CE8694 /* Project object */;
+}

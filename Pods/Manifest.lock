@@ -1,0 +1,24 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - JSONKit (1.4)
+
+DEPENDENCIES:
+  - FMDB (~> 2.6)
+  - GoogleMaps (~> 2.2)
+  - JSONKit (= 1.4)
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+
+PODFILE CHECKSUM: 1b03f461e3f4826ac3185c998d153f2af152ce83
+
+COCOAPODS: 1.2.1
