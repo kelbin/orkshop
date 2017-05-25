@@ -72,7 +72,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     GoodsController *goodser = [GoodsController new];
-    goodser.goods = json[@"market"][indexPath.row][@"subtree"][indexPath.row][@"goods"];
+    goodser.goods = json[@"market"][indexPath.row][@"subtree"][indexPath.row][@"goods"]; // Выгружение товаров из внутреннего массива
     [self.navigationController pushViewController:goodser animated:YES];
     
 }
