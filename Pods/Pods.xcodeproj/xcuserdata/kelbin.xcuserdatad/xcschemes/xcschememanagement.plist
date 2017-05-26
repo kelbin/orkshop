@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FMDB.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>JSONKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3E887169A74940996CC5EF77C63DA941</key>
+		<key>2FEA91F277C3E262C296BE92865A10EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4685D9C129445302A6DA4CBD81FFA36E</key>
+		<key>3E887169A74940996CC5EF77C63DA941</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +43,6 @@
 			<true/>
 		</dict>
 		<key>5AB34BCC2A5390C2CD01D674EE1EBAC0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
