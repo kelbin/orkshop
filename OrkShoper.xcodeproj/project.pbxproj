@@ -7,32 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC0168DF1EC9F31000339528 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168DE1EC9F31000339528 /* bg.png */; };
-		BC0168E21EC9FA8800339528 /* MarketController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0168E11EC9FA8800339528 /* MarketController.m */; };
-		BC0168E81EC9FF3C00339528 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168E71EC9FF3C00339528 /* map.png */; };
-		BC0168EA1ECA02B700339528 /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0168E91ECA02B700339528 /* shop.png */; };
 		BC0229731EBB4A4A00BFDF77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0229721EBB4A4A00BFDF77 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		BC06221D1EBF2A9B00A95162 /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC06221C1EBF2A9B00A95162 /* NewsController.m */; };
-		BC0913171EC30AA400D403A1 /* NewsCellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0913161EC30AA400D403A1 /* NewsCellsController.m */; };
-		BC236F061EC88359004EFC7C /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC236F051EC88359004EFC7C /* MapController.m */; };
-		BC236F081EC8882C004EFC7C /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = BC236F071EC8882C004EFC7C /* maps.png */; };
 		BC239A58F56543D180DCA7AF /* libPods-OrkShoper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0752B39B6D15F1EDA7B7B497 /* libPods-OrkShoper.a */; };
-		BC2E01101EC606F200EE8252 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E010F1EC606F200EE8252 /* news.png */; };
-		BC2E01141EC607AA00EE8252 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E01131EC607AA00EE8252 /* home.png */; };
-		BC2E01161EC6138200EE8252 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2E01151EC6138200EE8252 /* cart.png */; };
-		BC3EC16E1ECF2B5300871DB6 /* market1ForOrkShop.json in Resources */ = {isa = PBXBuildFile; fileRef = BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */; };
-		BC3EC1711ECF391400871DB6 /* MarketSubTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */; };
-		BC3EC1741ECF611900871DB6 /* GoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3EC1731ECF611900871DB6 /* GoodsController.m */; };
-		BC500DC41EC1F7A500C7D102 /* NewsForOrkShoper.json in Resources */ = {isa = PBXBuildFile; fileRef = BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */; };
-		BC59C8E31EAE47F600E76135 /* mainback4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC59C8E21EAE47F600E76135 /* mainback4.png */; };
 		BC5CFE5B1EB73C53000931E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
-		BC697AB51EB35BA80044850B /* o3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC697AB41EB35BA80044850B /* o3.png */; };
-		BC9273431EB9F85100BE234A /* orkshop.db in Resources */ = {isa = PBXBuildFile; fileRef = BC9273421EB9F85100BE234A /* orkshop.db */; };
-		BCA4B2241EAF76A600FB22A9 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA4B2231EAF76A600FB22A9 /* SignUpController.m */; };
-		BCCE87BA1EBB98DD00AB26BA /* core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */; };
-		BCE168911EA8B33000CE8694 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168901EA8B33000CE8694 /* main.m */; };
-		BCE168941EA8B33000CE8694 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168931EA8B33000CE8694 /* AppDelegate.m */; };
-		BCE168971EA8B33000CE8694 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168961EA8B33000CE8694 /* ViewController.m */; };
+		BC77C2F91ED82BCC00CF24F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2D61ED82BCC00CF24F1 /* AppDelegate.m */; };
+		BC77C2FA1ED82BCC00CF24F1 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2D91ED82BCC00CF24F1 /* bg.png */; };
+		BC77C2FB1ED82BCC00CF24F1 /* mainback4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2DA1ED82BCC00CF24F1 /* mainback4.png */; };
+		BC77C2FC1ED82BCC00CF24F1 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2DD1ED82BCC00CF24F1 /* home.png */; };
+		BC77C2FD1ED82BCC00CF24F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2DF1ED82BCC00CF24F1 /* ViewController.m */; };
+		BC77C2FE1ED82BCC00CF24F1 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2E21ED82BCC00CF24F1 /* map.png */; };
+		BC77C2FF1ED82BCC00CF24F1 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2E41ED82BCC00CF24F1 /* MapController.m */; };
+		BC77C3001ED82BCC00CF24F1 /* GoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2E71ED82BCC00CF24F1 /* GoodsController.m */; };
+		BC77C3011ED82BCC00CF24F1 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2E91ED82BCC00CF24F1 /* cart.png */; };
+		BC77C3021ED82BCC00CF24F1 /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2EA1ED82BCC00CF24F1 /* shop.png */; };
+		BC77C3031ED82BCC00CF24F1 /* MarketController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */; };
+		BC77C3041ED82BCC00CF24F1 /* MarketSubTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */; };
+		BC77C3051ED82BCC00CF24F1 /* NewsCellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2F21ED82BCC00CF24F1 /* NewsCellsController.m */; };
+		BC77C3061ED82BCC00CF24F1 /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2F41ED82BCC00CF24F1 /* NewsController.m */; };
+		BC77C3071ED82BCC00CF24F1 /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2F81ED82BCC00CF24F1 /* SignUpController.m */; };
+		BC77C30D1ED82C0D00CF24F1 /* core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC77C3091ED82C0D00CF24F1 /* core.xcdatamodeld */; };
+		BC77C30E1ED82C0D00CF24F1 /* market1ForOrkShop.json in Resources */ = {isa = PBXBuildFile; fileRef = BC77C30B1ED82C0D00CF24F1 /* market1ForOrkShop.json */; };
+		BC77C30F1ED82C0D00CF24F1 /* NewsForOrkShoper.json in Resources */ = {isa = PBXBuildFile; fileRef = BC77C30C1ED82C0D00CF24F1 /* NewsForOrkShoper.json */; };
+		BC77C3111ED82FDA00CF24F1 /* newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C3101ED82FDA00CF24F1 /* newspaper.png */; };
+		BCAEF4D41ED84CBA004B8C4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAEF4D31ED84CBA004B8C4A /* main.m */; };
 		BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE1689B1EA8B33000CE8694 /* Assets.xcassets */; };
 		BCE168AA1EA8B33000CE8694 /* OrkShoperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */; };
 		BCE168B51EA8B33000CE8694 /* OrkShoperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */; };
@@ -65,41 +62,38 @@
 		4AA0DB7DE476A83D955A0F41 /* Pods-OrkShoper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper.debug.xcconfig"; sourceTree = "<group>"; };
 		571C73F3C026D9574DE8E169 /* Pods-OrkShoperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC0168DE1EC9F31000339528 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../../../../Downloads/bg.png; sourceTree = "<group>"; };
-		BC0168E01EC9FA8800339528 /* MarketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketController.h; sourceTree = "<group>"; };
-		BC0168E11EC9FA8800339528 /* MarketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketController.m; sourceTree = "<group>"; };
-		BC0168E71EC9FF3C00339528 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../../../Downloads/map.png; sourceTree = "<group>"; };
-		BC0168E91ECA02B700339528 /* shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shop.png; path = ../../../../../Downloads/shop.png; sourceTree = "<group>"; };
 		BC0229721EBB4A4A00BFDF77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		BC06221B1EBF2A9B00A95162 /* NewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
-		BC06221C1EBF2A9B00A95162 /* NewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
-		BC0913151EC30AA400D403A1 /* NewsCellsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCellsController.h; sourceTree = "<group>"; };
-		BC0913161EC30AA400D403A1 /* NewsCellsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCellsController.m; sourceTree = "<group>"; };
-		BC236F041EC88359004EFC7C /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
-		BC236F051EC88359004EFC7C /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
-		BC236F071EC8882C004EFC7C /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maps.png; path = ../../../../../Downloads/maps.png; sourceTree = "<group>"; };
-		BC2E010F1EC606F200EE8252 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = news.png; path = ../../../../../Downloads/news.png; sourceTree = "<group>"; };
-		BC2E01131EC607AA00EE8252 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/home.png; sourceTree = "<group>"; };
-		BC2E01151EC6138200EE8252 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cart.png; path = ../../../../../Downloads/cart.png; sourceTree = "<group>"; };
-		BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = market1ForOrkShop.json; path = ../../../../../Downloads/market1ForOrkShop.json; sourceTree = "<group>"; };
-		BC3EC16F1ECF391400871DB6 /* MarketSubTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketSubTreeController.h; sourceTree = "<group>"; };
-		BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketSubTreeController.m; sourceTree = "<group>"; };
-		BC3EC1721ECF611900871DB6 /* GoodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsController.h; sourceTree = "<group>"; };
-		BC3EC1731ECF611900871DB6 /* GoodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsController.m; sourceTree = "<group>"; };
-		BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NewsForOrkShoper.json; path = ../../../../../Downloads/NewsForOrkShoper.json; sourceTree = "<group>"; };
-		BC59C8E21EAE47F600E76135 /* mainback4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainback4.png; path = ../../../../../Downloads/mainback4.png; sourceTree = "<group>"; };
 		BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		BC697AB41EB35BA80044850B /* o3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = o3.png; path = ../../../../../Downloads/o3.png; sourceTree = "<group>"; };
-		BC9273421EB9F85100BE234A /* orkshop.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = orkshop.db; sourceTree = "<group>"; };
-		BCA4B2221EAF76A600FB22A9 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
-		BCA4B2231EAF76A600FB22A9 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
-		BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = core.xcdatamodel; sourceTree = "<group>"; };
+		BC77C2D51ED82BCC00CF24F1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC77C2D61ED82BCC00CF24F1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC77C2D91ED82BCC00CF24F1 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		BC77C2DA1ED82BCC00CF24F1 /* mainback4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainback4.png; sourceTree = "<group>"; };
+		BC77C2DD1ED82BCC00CF24F1 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		BC77C2DE1ED82BCC00CF24F1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC77C2DF1ED82BCC00CF24F1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC77C2E21ED82BCC00CF24F1 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		BC77C2E31ED82BCC00CF24F1 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		BC77C2E41ED82BCC00CF24F1 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		BC77C2E61ED82BCC00CF24F1 /* GoodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsController.h; sourceTree = "<group>"; };
+		BC77C2E71ED82BCC00CF24F1 /* GoodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsController.m; sourceTree = "<group>"; };
+		BC77C2E91ED82BCC00CF24F1 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		BC77C2EA1ED82BCC00CF24F1 /* shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop.png; sourceTree = "<group>"; };
+		BC77C2EB1ED82BCC00CF24F1 /* MarketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketController.h; sourceTree = "<group>"; };
+		BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketController.m; sourceTree = "<group>"; };
+		BC77C2ED1ED82BCC00CF24F1 /* MarketSubTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketSubTreeController.h; sourceTree = "<group>"; };
+		BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketSubTreeController.m; sourceTree = "<group>"; };
+		BC77C2F11ED82BCC00CF24F1 /* NewsCellsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCellsController.h; sourceTree = "<group>"; };
+		BC77C2F21ED82BCC00CF24F1 /* NewsCellsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCellsController.m; sourceTree = "<group>"; };
+		BC77C2F31ED82BCC00CF24F1 /* NewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
+		BC77C2F41ED82BCC00CF24F1 /* NewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
+		BC77C2F71ED82BCC00CF24F1 /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		BC77C2F81ED82BCC00CF24F1 /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
+		BC77C30A1ED82C0D00CF24F1 /* core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = core.xcdatamodel; sourceTree = "<group>"; };
+		BC77C30B1ED82C0D00CF24F1 /* market1ForOrkShop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = market1ForOrkShop.json; sourceTree = "<group>"; };
+		BC77C30C1ED82C0D00CF24F1 /* NewsForOrkShoper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewsForOrkShoper.json; sourceTree = "<group>"; };
+		BC77C3101ED82FDA00CF24F1 /* newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper.png; sourceTree = "<group>"; };
+		BCAEF4D31ED84CBA004B8C4A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCE1688C1EA8B33000CE8694 /* OrkShoper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrkShoper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCE168901EA8B33000CE8694 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BCE168921EA8B33000CE8694 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BCE168931EA8B33000CE8694 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BCE168951EA8B33000CE8694 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BCE168961EA8B33000CE8694 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BCE1689B1EA8B33000CE8694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE168A01EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE168A51EA8B33000CE8694 /* OrkShoperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkShoperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +102,6 @@
 		BCE168B01EA8B33000CE8694 /* OrkShoperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkShoperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrkShoperUITests.m; sourceTree = "<group>"; };
 		BCE168B61EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCF640F61EB9E7FD00A9DC43 /* OrkShopData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = OrkShopData.db; sourceTree = "<group>"; };
 		EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA11C7DE772922693AE94559 /* Pods-OrkShoper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoper.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +161,152 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC77C2D31ED82BCC00CF24F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2D41ED82BCC00CF24F1 /* AppDelegate */,
+				BC77C2D81ED82BCC00CF24F1 /* img */,
+				BC77C2DB1ED82BCC00CF24F1 /* LogIn */,
+				BC77C2E01ED82BCC00CF24F1 /* Map */,
+				BC77C2E51ED82BCC00CF24F1 /* Market */,
+				BC77C2EF1ED82BCC00CF24F1 /* News */,
+				BC77C2F51ED82BCC00CF24F1 /* SignUp */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC77C2D41ED82BCC00CF24F1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2D51ED82BCC00CF24F1 /* AppDelegate.h */,
+				BC77C2D61ED82BCC00CF24F1 /* AppDelegate.m */,
+				BC77C2D71ED82BCC00CF24F1 /* img */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BC77C2D71ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2D81ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2D91ED82BCC00CF24F1 /* bg.png */,
+				BC77C2DA1ED82BCC00CF24F1 /* mainback4.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2DB1ED82BCC00CF24F1 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2DC1ED82BCC00CF24F1 /* img */,
+				BC77C2DE1ED82BCC00CF24F1 /* ViewController.h */,
+				BC77C2DF1ED82BCC00CF24F1 /* ViewController.m */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		BC77C2DC1ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2DD1ED82BCC00CF24F1 /* home.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2E01ED82BCC00CF24F1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2E11ED82BCC00CF24F1 /* img */,
+				BC77C2E31ED82BCC00CF24F1 /* MapController.h */,
+				BC77C2E41ED82BCC00CF24F1 /* MapController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BC77C2E11ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2E21ED82BCC00CF24F1 /* map.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2E51ED82BCC00CF24F1 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2E61ED82BCC00CF24F1 /* GoodsController.h */,
+				BC77C2E71ED82BCC00CF24F1 /* GoodsController.m */,
+				BC77C2EB1ED82BCC00CF24F1 /* MarketController.h */,
+				BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */,
+				BC77C2ED1ED82BCC00CF24F1 /* MarketSubTreeController.h */,
+				BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */,
+				BC77C2E81ED82BCC00CF24F1 /* img */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		BC77C2E81ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2E91ED82BCC00CF24F1 /* cart.png */,
+				BC77C2EA1ED82BCC00CF24F1 /* shop.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2EF1ED82BCC00CF24F1 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2F01ED82BCC00CF24F1 /* img */,
+				BC77C2F11ED82BCC00CF24F1 /* NewsCellsController.h */,
+				BC77C2F21ED82BCC00CF24F1 /* NewsCellsController.m */,
+				BC77C2F31ED82BCC00CF24F1 /* NewsController.h */,
+				BC77C2F41ED82BCC00CF24F1 /* NewsController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		BC77C2F01ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C3101ED82FDA00CF24F1 /* newspaper.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C2F51ED82BCC00CF24F1 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C2F61ED82BCC00CF24F1 /* img */,
+				BC77C2F71ED82BCC00CF24F1 /* SignUpController.h */,
+				BC77C2F81ED82BCC00CF24F1 /* SignUpController.m */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BC77C2F61ED82BCC00CF24F1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		BC77C3081ED82C0D00CF24F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C3091ED82C0D00CF24F1 /* core.xcdatamodeld */,
+				BC77C30B1ED82C0D00CF24F1 /* market1ForOrkShop.json */,
+				BC77C30C1ED82C0D00CF24F1 /* NewsForOrkShoper.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BCE168831EA8B33000CE8694 = {
 			isa = PBXGroup;
 			children = (
@@ -193,40 +332,10 @@
 		BCE1688E1EA8B33000CE8694 /* OrkShoper */ = {
 			isa = PBXGroup;
 			children = (
-				BCE168921EA8B33000CE8694 /* AppDelegate.h */,
-				BCE168931EA8B33000CE8694 /* AppDelegate.m */,
-				BCE168951EA8B33000CE8694 /* ViewController.h */,
-				BCE168961EA8B33000CE8694 /* ViewController.m */,
-				BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */,
-				BCA4B2221EAF76A600FB22A9 /* SignUpController.h */,
-				BCA4B2231EAF76A600FB22A9 /* SignUpController.m */,
-				BC236F041EC88359004EFC7C /* MapController.h */,
-				BC236F051EC88359004EFC7C /* MapController.m */,
-				BC06221B1EBF2A9B00A95162 /* NewsController.h */,
-				BC06221C1EBF2A9B00A95162 /* NewsController.m */,
-				BC0168E01EC9FA8800339528 /* MarketController.h */,
-				BC0168E11EC9FA8800339528 /* MarketController.m */,
-				BC3EC16F1ECF391400871DB6 /* MarketSubTreeController.h */,
-				BC3EC1701ECF391400871DB6 /* MarketSubTreeController.m */,
-				BC3EC1721ECF611900871DB6 /* GoodsController.h */,
-				BC3EC1731ECF611900871DB6 /* GoodsController.m */,
-				BC0913151EC30AA400D403A1 /* NewsCellsController.h */,
-				BC0913161EC30AA400D403A1 /* NewsCellsController.m */,
-				BCF640F61EB9E7FD00A9DC43 /* OrkShopData.db */,
-				BC9273421EB9F85100BE234A /* orkshop.db */,
 				BCE1689B1EA8B33000CE8694 /* Assets.xcassets */,
-				BC697AB41EB35BA80044850B /* o3.png */,
+				BC77C2D31ED82BCC00CF24F1 /* View */,
 				BCE168A01EA8B33000CE8694 /* Info.plist */,
-				BC2E01151EC6138200EE8252 /* cart.png */,
-				BC500DC31EC1F7A500C7D102 /* NewsForOrkShoper.json */,
-				BC3EC16D1ECF2B5300871DB6 /* market1ForOrkShop.json */,
-				BC0168E71EC9FF3C00339528 /* map.png */,
-				BC2E010F1EC606F200EE8252 /* news.png */,
-				BC236F071EC8882C004EFC7C /* maps.png */,
-				BC2E01131EC607AA00EE8252 /* home.png */,
-				BC0168E91ECA02B700339528 /* shop.png */,
-				BC0168DE1EC9F31000339528 /* bg.png */,
-				BC59C8E21EAE47F600E76135 /* mainback4.png */,
+				BC77C3081ED82C0D00CF24F1 /* Model */,
 				BCE1688F1EA8B33000CE8694 /* Supporting Files */,
 			);
 			path = OrkShoper;
@@ -235,7 +344,7 @@
 		BCE1688F1EA8B33000CE8694 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BCE168901EA8B33000CE8694 /* main.m */,
+				BCAEF4D31ED84CBA004B8C4A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -373,19 +482,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC2E01101EC606F200EE8252 /* news.png in Resources */,
-				BC2E01161EC6138200EE8252 /* cart.png in Resources */,
-				BC0168DF1EC9F31000339528 /* bg.png in Resources */,
-				BC697AB51EB35BA80044850B /* o3.png in Resources */,
-				BC500DC41EC1F7A500C7D102 /* NewsForOrkShoper.json in Resources */,
-				BC0168EA1ECA02B700339528 /* shop.png in Resources */,
-				BC9273431EB9F85100BE234A /* orkshop.db in Resources */,
-				BC3EC16E1ECF2B5300871DB6 /* market1ForOrkShop.json in Resources */,
-				BC0168E81EC9FF3C00339528 /* map.png in Resources */,
-				BC2E01141EC607AA00EE8252 /* home.png in Resources */,
-				BC59C8E31EAE47F600E76135 /* mainback4.png in Resources */,
+				BC77C30E1ED82C0D00CF24F1 /* market1ForOrkShop.json in Resources */,
+				BC77C3021ED82BCC00CF24F1 /* shop.png in Resources */,
+				BC77C2FC1ED82BCC00CF24F1 /* home.png in Resources */,
+				BC77C30F1ED82C0D00CF24F1 /* NewsForOrkShoper.json in Resources */,
+				BC77C2FA1ED82BCC00CF24F1 /* bg.png in Resources */,
+				BC77C3111ED82FDA00CF24F1 /* newspaper.png in Resources */,
 				BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */,
-				BC236F081EC8882C004EFC7C /* maps.png in Resources */,
+				BC77C2FB1ED82BCC00CF24F1 /* mainback4.png in Resources */,
+				BC77C2FE1ED82BCC00CF24F1 /* map.png in Resources */,
+				BC77C3011ED82BCC00CF24F1 /* cart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,17 +654,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC3EC1711ECF391400871DB6 /* MarketSubTreeController.m in Sources */,
-				BCE168971EA8B33000CE8694 /* ViewController.m in Sources */,
-				BCE168941EA8B33000CE8694 /* AppDelegate.m in Sources */,
-				BC3EC1741ECF611900871DB6 /* GoodsController.m in Sources */,
-				BCE168911EA8B33000CE8694 /* main.m in Sources */,
-				BC0168E21EC9FA8800339528 /* MarketController.m in Sources */,
-				BC0913171EC30AA400D403A1 /* NewsCellsController.m in Sources */,
-				BCCE87BA1EBB98DD00AB26BA /* core.xcdatamodeld in Sources */,
-				BCA4B2241EAF76A600FB22A9 /* SignUpController.m in Sources */,
-				BC236F061EC88359004EFC7C /* MapController.m in Sources */,
-				BC06221D1EBF2A9B00A95162 /* NewsController.m in Sources */,
+				BC77C3001ED82BCC00CF24F1 /* GoodsController.m in Sources */,
+				BC77C2FF1ED82BCC00CF24F1 /* MapController.m in Sources */,
+				BC77C2FD1ED82BCC00CF24F1 /* ViewController.m in Sources */,
+				BC77C30D1ED82C0D00CF24F1 /* core.xcdatamodeld in Sources */,
+				BC77C3031ED82BCC00CF24F1 /* MarketController.m in Sources */,
+				BC77C3061ED82BCC00CF24F1 /* NewsController.m in Sources */,
+				BC77C3051ED82BCC00CF24F1 /* NewsCellsController.m in Sources */,
+				BC77C3041ED82BCC00CF24F1 /* MarketSubTreeController.m in Sources */,
+				BC77C3071ED82BCC00CF24F1 /* SignUpController.m in Sources */,
+				BCAEF4D41ED84CBA004B8C4A /* main.m in Sources */,
+				BC77C2F91ED82BCC00CF24F1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,12 +908,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BCCE87B81EBB98DD00AB26BA /* core.xcdatamodeld */ = {
+		BC77C3091ED82C0D00CF24F1 /* core.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */,
+				BC77C30A1ED82C0D00CF24F1 /* core.xcdatamodel */,
 			);
-			currentVersion = BCCE87B91EBB98DD00AB26BA /* core.xcdatamodel */;
+			currentVersion = BC77C30A1ED82C0D00CF24F1 /* core.xcdatamodel */;
 			path = core.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
