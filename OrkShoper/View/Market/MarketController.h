@@ -10,5 +10,8 @@
 
 @interface MarketController : UITableViewController
 
+
 @property (nonatomic,weak) NSArray *market;
+
+
 @end

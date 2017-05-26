@@ -13,8 +13,8 @@
     
     GMSMapView *mapView;
     CLLocation *location;
-    
 }
+
 @end
 
 @implementation MapController
@@ -28,27 +28,30 @@
     [self firstmarket];
     [self secondmarket];
     [self thirdmarket];
-    // Do any additional setup after loading the view.
 }
-- (void)viewWillDisappear:(BOOL)animated{
+
+
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated] ;
     [mapView clear];
     [mapView removeFromSuperview] ;
     mapView = nil ;
 }
 
--(void)getLocation{
-        _locationManager = [[CLLocationManager alloc] init];
-        _locationManager.delegate = self;
-        [_locationManager requestWhenInUseAuthorization];
-        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        _locationManager.distanceFilter = kCLDistanceFilterNone;
-        [_locationManager startUpdatingLocation];
-        location = [_locationManager location];
-        NSLog(@"%f",location.coordinate.latitude);
-    }
--(void)GoogleMap
- {
+
+-(void)getLocation {
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    [_locationManager requestWhenInUseAuthorization];
+    _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    _locationManager.distanceFilter = kCLDistanceFilterNone;
+    [_locationManager startUpdatingLocation];
+    location = [_locationManager location];
+    NSLog(@"%f",location.coordinate.latitude);
+}
+
+
+-(void)GoogleMap {
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:location.coordinate.latitude
                                                             longitude:location.coordinate.longitude
                                                                  zoom:6];
@@ -56,8 +59,9 @@
     mapView.settings.scrollGestures = YES;
     mapView.settings.zoomGestures = YES;
     self.view = mapView;
-   
 }
+
+
 -(void)firstmarket {
     GMSMarker *marker1 = [[GMSMarker alloc] init];
     marker1.position = CLLocationCoordinate2DMake(54.532373, 36.271735);
@@ -65,6 +69,8 @@
     marker1.snippet = @"Ул. Глаголева 5 +74842750875";
     marker1.map = mapView;
 }
+
+
 -(void)secondmarket {
     GMSMarker *marker2 = [[GMSMarker alloc] init];
     marker2.position = CLLocationCoordinate2DMake(52.590394, 39.617371);
@@ -72,6 +78,8 @@
     marker2.snippet = @"Мира ПЛ, 3 +74842551255";
     marker2.map = mapView;
 }
+
+
 -(void)thirdmarket {
     GMSMarker *marker3 = [[GMSMarker alloc] init];
     marker3.position = CLLocationCoordinate2DMake(54.513283, 36.256534);
@@ -79,6 +87,8 @@
     marker3.snippet = @"Ул. Театральная, 4В +74842795517, +74842533688, +79534630980, +79105222640";
     marker3.map = mapView;
 }
+
+
 -(void)mylocation {
     GMSMarker *marker3 = [[GMSMarker alloc] init];
     marker3.position = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude);
@@ -86,10 +96,12 @@
     marker3.map = mapView;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

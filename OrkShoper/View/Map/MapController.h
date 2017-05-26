@@ -12,6 +12,8 @@
 
 @interface MapController : UIViewController <CLLocationManagerDelegate>
 
+
 @property (nonatomic, retain) CLLocationManager *locationManager;
+
 
 @end

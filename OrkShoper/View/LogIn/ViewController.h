@@ -10,7 +10,8 @@
 #import <CoreData/CoreData.h>
 
 @interface ViewController : UIViewController {
-UIImageView *back;
+    
+    UIImageView *back;
     NSArray *items;
     
 }

@@ -22,11 +22,14 @@
     loglabel.frame = CGRectMake(10, 250, 300, 200);
     loglabel.textColor = [UIColor blackColor];
     [self.view addSubview:loglabel];
-    // Configure the view for the selected state
 }
--(void)postimage{
+
+
+-(void)postimage {
     UIImageView*back = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, 320, 250)];
     back.image = _img;
     [self.view addSubview:back];
 }
+
+
 @end

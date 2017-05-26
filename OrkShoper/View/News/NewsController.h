@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface NewsController : UITableViewController{}
+
+
 @property(nonatomic,strong)NSArray*hi;
 @property(nonatomic,strong)UIBarButtonItem *rightbutton;
+
 
 @end

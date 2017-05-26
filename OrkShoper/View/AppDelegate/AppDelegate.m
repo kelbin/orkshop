@@ -31,12 +31,12 @@
     UINavigationController *marketcon = [[UINavigationController alloc] initWithRootViewController:market];
     NSArray *controllers = [NSArray arrayWithObjects:navcontroller,navcon,mapnavcon,marketcon,nil];
     tabBar.viewControllers = controllers;
-    navcontroller.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"View/LogIn/img/home.png"] tag:0];
-    navcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"View/News/img/newspaper.png"] tag:1];
-    mapnavcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"View/Map/img/map.png"] tag:2];
-    marketcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"View/Market/img/shop.png"] tag:3];
+    navcontroller.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"home.png"] tag:0];
+    navcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"newspaper.png"] tag:1];
+    mapnavcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"map.png"] tag:2];
+    marketcon.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"" image:[UIImage imageNamed:@"shop.png"] tag:3];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"View/img/bg.png"]];
+    self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
     self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
     [GMSServices provideAPIKey:@"AIzaSyCOunjbapTOY35NXTPZ90GxiesmHqu7XM8"];

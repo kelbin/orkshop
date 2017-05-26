@@ -10,13 +10,11 @@
 #import "ViewController.h"
 #import <sqlite3.h>
 
-@interface SignUpController ()<UITextFieldDelegate>
-{
+@interface SignUpController ()<UITextFieldDelegate> {
     UIButton *signup;
     NSString *car;
     sqlite3 *orkshoper;
     NSMutableArray *items;
-  
 }
 
 @end
@@ -37,15 +35,15 @@
     [self email];
     [self pass];
     [self backbutton];
-    
-    
-    
 }
+
+
 - (void)viewWillAppear:(BOOL)animated {
     self.tabBarController.tabBar.hidden = YES;
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
 }
+
 
 - (void)viewWillDisappear:(BOOL)animated {
     self.tabBarController.tabBar.hidden = NO;
@@ -53,14 +51,15 @@
     [super viewWillDisappear:animated];
 }
 
--(void)insertQueryForDatabase{
+
+-(void)insertQueryForDatabase {
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
     NSManagedObject *users = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
     [users setValue:email.text forKey:@"email"];
     [users setValue:login.text forKey:@"login"];
     [users setValue:pass.text  forKey:@"password"];
     NSError *error;
-    if (![context save:&error]){
+    if (![context save:&error]) {
         UIAlertController * alert=   [UIAlertController
                                       alertControllerWithTitle:@"Ошибка"
                                       message:@"Ошибка при сохранении данных"
@@ -139,19 +138,21 @@
     NSLog(@"here");
     items = [NSMutableArray arrayWithObject:_fetchedObjects];
     NSLog(@"PRIVETIK %@", items);
-
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
 
--(void)backgroundreg{
+
+-(void)backgroundreg {
     UIImageView *back = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, 250)];
-    back.image = [UIImage imageNamed:@"View/img/mainback4.png"];
+    back.image = [UIImage imageNamed:@"mainback4.png"];
     [self.view addSubview:back];
 }
+
 
 - (void)topline {
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(100, 350, 150, 2)];
@@ -159,7 +160,9 @@
     lineView.layer.cornerRadius = 3;
     [self.view addSubview:lineView];
 }
--(void)labelfornick{
+
+
+-(void)labelfornick {
     UILabel *loglabel = [UILabel new];
     loglabel.text = @"Логин";
     loglabel.frame = CGRectMake(100, 335, 100, 100);
@@ -167,7 +170,8 @@
     [self.view addSubview:loglabel];
 }
 
--(void)labelforemail{
+
+-(void)labelforemail {
     UILabel *emlabel = [UILabel new];
     emlabel.text = @"Почта";
     emlabel.frame = CGRectMake(100, 265, 100, 100);
@@ -175,6 +179,7 @@
     [self.view addSubview:emlabel];
 
 }
+
 
 -(BOOL)labelforpass {
     UILabel *passlabel = [UILabel new];
@@ -185,13 +190,14 @@
     return YES;
 }
 
+
 -(void)signup {
     signup = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [signup setTitle:@"Зарегистрироваться"  forState:UIControlStateNormal];
     [signup setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
     signup.frame = CGRectMake(10.0, 520.0, 160.0, 40.0);
     signup.layer.cornerRadius = 10;
-    [signup addTarget:self action:@selector(lol)
+    [signup addTarget:self action:@selector(errorMessage)
      forControlEvents:UIControlEventTouchUpInside];
     [signup addTarget:self action:@selector(insertQueryForDatabase)
      forControlEvents:UIControlEventTouchUpInside];
@@ -200,10 +206,11 @@
     
 }
 
+
 -(void)actionsign {
     NSLog(@"Hello");
-
 }
+
 
 -(void)login {
     login = [UITextField new];
@@ -222,7 +229,7 @@
     [self.view addSubview:email];
 }
 
--(IBAction)lol {
+-(IBAction)errorMessage {
     NSString *emailt = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,10}";
     NSPredicate *emailtest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailt];
         if ([emailtest evaluateWithObject:email.text] == NO) {
@@ -241,9 +248,9 @@
                                  }];
             [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];
-            
-        }
+    }
 }
+
 
 -(void)pass {
     pass = [UITextField new];
@@ -254,6 +261,7 @@
     pass.secureTextEntry = YES;
     [self.view addSubview:pass];
 }
+
 
 -(void)backbutton {
     UIButton *backbutt = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -267,18 +275,21 @@
     [self.view addSubview:backbutt];
 }
 
--(void)labelfor{
+
+-(void)labelfor {
     UILabel *emlabel = [UILabel new];
     emlabel.text = @"Почта";
     emlabel.frame = CGRectMake(200, 270, 100, 100);
     emlabel.textColor = [UIColor blackColor];
     [self.view addSubview:emlabel];
-    
 }
+
+
 - (void)actionsignup {
     ViewController *mainsignup = [[ViewController alloc] init];
     [self.navigationController pushViewController:mainsignup animated:YES];
 }
+
 
 -(void)middleline {
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(100, 420, 150, 2)];
@@ -286,6 +297,7 @@
     lineView.layer.cornerRadius = 3;
     [self.view addSubview:lineView];
 }
+
 
 -(void)bottomline {
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(100, 490, 150, 2)];

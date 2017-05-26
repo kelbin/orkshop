@@ -29,6 +29,7 @@
 		BC77C30E1ED82C0D00CF24F1 /* market1ForOrkShop.json in Resources */ = {isa = PBXBuildFile; fileRef = BC77C30B1ED82C0D00CF24F1 /* market1ForOrkShop.json */; };
 		BC77C30F1ED82C0D00CF24F1 /* NewsForOrkShoper.json in Resources */ = {isa = PBXBuildFile; fileRef = BC77C30C1ED82C0D00CF24F1 /* NewsForOrkShoper.json */; };
 		BC77C3111ED82FDA00CF24F1 /* newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C3101ED82FDA00CF24F1 /* newspaper.png */; };
+		BCAEF4D41ED84CBA004B8C4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAEF4D31ED84CBA004B8C4A /* main.m */; };
 		BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE1689B1EA8B33000CE8694 /* Assets.xcassets */; };
 		BCE168AA1EA8B33000CE8694 /* OrkShoperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */; };
 		BCE168B51EA8B33000CE8694 /* OrkShoperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */; };
@@ -91,6 +92,7 @@
 		BC77C30B1ED82C0D00CF24F1 /* market1ForOrkShop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = market1ForOrkShop.json; sourceTree = "<group>"; };
 		BC77C30C1ED82C0D00CF24F1 /* NewsForOrkShoper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewsForOrkShoper.json; sourceTree = "<group>"; };
 		BC77C3101ED82FDA00CF24F1 /* newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper.png; sourceTree = "<group>"; };
+		BCAEF4D31ED84CBA004B8C4A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCE1688C1EA8B33000CE8694 /* OrkShoper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrkShoper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE1689B1EA8B33000CE8694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE168A01EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -240,11 +242,11 @@
 			children = (
 				BC77C2E61ED82BCC00CF24F1 /* GoodsController.h */,
 				BC77C2E71ED82BCC00CF24F1 /* GoodsController.m */,
-				BC77C2E81ED82BCC00CF24F1 /* img */,
 				BC77C2EB1ED82BCC00CF24F1 /* MarketController.h */,
 				BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */,
 				BC77C2ED1ED82BCC00CF24F1 /* MarketSubTreeController.h */,
 				BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */,
+				BC77C2E81ED82BCC00CF24F1 /* img */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -342,6 +344,7 @@
 		BCE1688F1EA8B33000CE8694 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BCAEF4D31ED84CBA004B8C4A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				BC77C3051ED82BCC00CF24F1 /* NewsCellsController.m in Sources */,
 				BC77C3041ED82BCC00CF24F1 /* MarketSubTreeController.m in Sources */,
 				BC77C3071ED82BCC00CF24F1 /* SignUpController.m in Sources */,
+				BCAEF4D41ED84CBA004B8C4A /* main.m in Sources */,
 				BC77C2F91ED82BCC00CF24F1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

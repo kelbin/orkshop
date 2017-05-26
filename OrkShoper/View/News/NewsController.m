@@ -14,8 +14,9 @@
     NSString *title;
     NSArray*students;
     NSDictionary *json;
-   
 }
+
+
 @end
 
 @implementation NewsController
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     [self tabBarItem];
     [[self navigationItem] setHidesBackButton:YES animated:NO];
-    NSString *str=[[NSBundle mainBundle] pathForResource:@"Model/NewsForOrkShoper" ofType:@"json"];
+    NSString *str=[[NSBundle mainBundle] pathForResource:@"NewsForOrkShoper" ofType:@"json"];
     NSData *jsondata = [NSData dataWithContentsOfFile:str];
     [self.navigationItem setTitle:@"Лента"];
     JSONDecoder *decoder = [[JSONDecoder alloc] initWithParseOptions:JKParseOptionNone];
@@ -33,48 +34,42 @@
 }
 
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_hi count];
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    //Поиск ячейки
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-    //Если ячейка не найдена
     if (cell == nil) {
-        //Создание ячейки
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    //cell.textLabel.text = [students objectAtIndex:indexPath.row];
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_hi objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     [cell.imageView setImage:img];
     [[cell textLabel] setText:[[_hi objectAtIndex:indexPath.row]objectForKey:@"title_news"]];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
-        //cell.textLabel.text = [students objectAtIndex:indexPath.row];
     return cell;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
-    return 40;
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
+    return 40;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NewsCellsController *newscells = [NewsCellsController new];
     newscells.img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_hi objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     newscells.news_title = [[_hi objectAtIndex:indexPath.row]objectForKey:@"description"];
     [self.navigationController pushViewController:newscells animated:YES];
-
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 /*

@@ -10,7 +10,10 @@
 
 @interface MarketSubTreeController : UITableViewController
 
+
 @property (nonatomic,weak) NSArray *marketsub;
 @property (nonatomic,strong)NSData *jsondata;
 @property (nonatomic, strong)NSString *str;
+
+
 @end

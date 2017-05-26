@@ -73,7 +73,7 @@
 }
 
 -(IBAction)checktoent {
-    if ([items containsObject:@{@"login":login.text,@"password": pass.text}]  ) {
+    if ([items containsObject:@{@"login":login.text,@"password": pass.text}]) {
         NewsController *news = [NewsController new];
         [self.navigationController pushViewController:news animated:YES];
     }
@@ -92,7 +92,6 @@
                              }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
-
     }
     if ([login.text  isEqual: @""] && [pass.text  isEqual: @""]) {
         UIAlertController * alert=   [UIAlertController
@@ -110,12 +109,11 @@
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }
-
 }
 
 -(UIImageView*)background {
     back = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, 250)];
-    back.image = [UIImage imageNamed:@"View/img/mainback4.png"];
+    back.image = [UIImage imageNamed:@"mainback4.png"];
     [self.view addSubview:back];
     return back;
 }

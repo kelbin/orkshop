@@ -10,9 +10,8 @@
 #import "JSONKit.h"
 #import "MarketSubTreeController.h"
 
-@interface MarketController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate>
-{
-NSDictionary *json;
+@interface MarketController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate> {
+    NSDictionary *json;
 }
 
 @end
@@ -23,7 +22,7 @@ NSDictionary *json;
     [super viewDidLoad];
     [self leftmenu];
     [[self navigationItem] setHidesBackButton:YES animated:NO];
-    NSString *str=[[NSBundle mainBundle] pathForResource:@"Model/market1ForOrkShop" ofType:@"json"];
+    NSString *str=[[NSBundle mainBundle] pathForResource:@"market1ForOrkShop" ofType:@"json"];
     NSData *jsondata = [NSData dataWithContentsOfFile:str];
     [self.navigationItem setTitle:@"Магазин"];
     JSONDecoder *decoder = [[JSONDecoder alloc] initWithParseOptions:JKParseOptionNone];
@@ -36,55 +35,51 @@ NSDictionary *json;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
--(IBAction)leftmenu{
-    UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"View/Market/img/cart.png"]
+-(IBAction)leftmenu {
+    UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cart.png"]
                                                     style:UIBarButtonItemStylePlain target:nil action:nil];
     rightbutton.tintColor = [UIColor blackColor];
     [self.navigationItem setRightBarButtonItem:rightbutton];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_market count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    //Поиск ячейки
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    //Если ячейка не найдена
     if (cell == nil) {
-        //Создание ячейки
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_market objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     [cell.imageView setImage:img];
     [[cell textLabel] setText:[[_market objectAtIndex:indexPath.row]objectForKey:@"title"]];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
     return cell;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return 40;
-    
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MarketSubTreeController *marketsubtree = [MarketSubTreeController new];
     marketsubtree.marketsub = json[@"market"][indexPath.row][@"subtree"];
     [self.navigationController pushViewController:marketsubtree animated:YES];
-    
 }
 
 /*

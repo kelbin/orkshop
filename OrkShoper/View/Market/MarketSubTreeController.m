@@ -10,71 +10,63 @@
 #import "MarketController.h"
 #import "JSONKit.h"
 #import "GoodsController.h"
-@interface MarketSubTreeController ()
-{
+@interface MarketSubTreeController () {
     NSDictionary *json;
 }
+
 @end
 
 @implementation MarketSubTreeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _str=[[NSBundle mainBundle] pathForResource:@"Model/market1ForOrkShop" ofType:@"json"];
+    _str=[[NSBundle mainBundle] pathForResource:@"market1ForOrkShop" ofType:@"json"];
     _jsondata = [NSData dataWithContentsOfFile:_str];
     [self.navigationItem setTitle:@"Магазин"];
     JSONDecoder *decoder = [[JSONDecoder alloc] initWithParseOptions:JKParseOptionNone];
     json = [decoder objectWithData:_jsondata];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Table view data source
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_marketsub count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    //Поиск ячейки
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    //Если ячейка не найдена
     if (cell == nil) {
-        //Создание ячейки
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_marketsub objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     [cell.imageView setImage:img];
     [[cell textLabel] setText:[[_marketsub objectAtIndex:indexPath.row]objectForKey:@"title"]];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
     return cell;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
-{
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return 40;
-    
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     GoodsController *goodser = [GoodsController new];// Выгружение товаров из внутреннего массива
     goodser.goods = _marketsub[indexPath.row][@"goods"];
     [self.navigationController pushViewController:goodser animated:YES];
-    
 }
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

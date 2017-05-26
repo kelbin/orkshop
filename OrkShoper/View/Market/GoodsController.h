@@ -10,6 +10,8 @@
 #import "MarketSubTreeController.h"
 @interface GoodsController : UITableViewController
 
+
 @property (nonatomic,strong)NSArray *goods;
+
 
 @end
