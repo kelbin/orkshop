@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "MarketSubTreeController.h"
+#import <CoreData/CoreData.h>
+
+
 @interface GoodsController : UITableViewController
 
 
 @property (nonatomic,strong)NSArray *goods;
-
+@property (nonatomic)int row;
+@property (readonly, strong)NSPersistentContainer *persistentContainer;
+@property (nonatomic,strong)NSManagedObjectContext *context;
+@property (nonatomic,strong)NSArray *cararr;
 
 @end

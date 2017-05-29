@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC0229731EBB4A4A00BFDF77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0229721EBB4A4A00BFDF77 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BC239A58F56543D180DCA7AF /* libPods-OrkShoper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0752B39B6D15F1EDA7B7B497 /* libPods-OrkShoper.a */; };
+		BC2F492C1ED9C73600F1760A /* CartController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2F492B1ED9C73600F1760A /* CartController.m */; };
 		BC5CFE5B1EB73C53000931E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		BC77C2F91ED82BCC00CF24F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC77C2D61ED82BCC00CF24F1 /* AppDelegate.m */; };
 		BC77C2FA1ED82BCC00CF24F1 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BC77C2D91ED82BCC00CF24F1 /* bg.png */; };
@@ -63,6 +64,8 @@
 		571C73F3C026D9574DE8E169 /* Pods-OrkShoperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoperUITests/Pods-OrkShoperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0229721EBB4A4A00BFDF77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BC2F492A1ED9C73600F1760A /* CartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartController.h; sourceTree = "<group>"; };
+		BC2F492B1ED9C73600F1760A /* CartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartController.m; sourceTree = "<group>"; };
 		BC5CFE5A1EB73C53000931E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BC77C2D51ED82BCC00CF24F1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC77C2D61ED82BCC00CF24F1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */,
 				BC77C2ED1ED82BCC00CF24F1 /* MarketSubTreeController.h */,
 				BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */,
+				BC2F492A1ED9C73600F1760A /* CartController.h */,
+				BC2F492B1ED9C73600F1760A /* CartController.m */,
 				BC77C2E81ED82BCC00CF24F1 /* img */,
 			);
 			path = Market;
@@ -659,6 +664,7 @@
 				BC77C2FD1ED82BCC00CF24F1 /* ViewController.m in Sources */,
 				BC77C30D1ED82C0D00CF24F1 /* core.xcdatamodeld in Sources */,
 				BC77C3031ED82BCC00CF24F1 /* MarketController.m in Sources */,
+				BC2F492C1ED9C73600F1760A /* CartController.m in Sources */,
 				BC77C3061ED82BCC00CF24F1 /* NewsController.m in Sources */,
 				BC77C3051ED82BCC00CF24F1 /* NewsCellsController.m in Sources */,
 				BC77C3041ED82BCC00CF24F1 /* MarketSubTreeController.m in Sources */,

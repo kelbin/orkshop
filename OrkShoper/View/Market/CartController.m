@@ -1,50 +1,49 @@
 //
-//  GoodsController.m
+//  CartController.m
 //  OrkShoper
 //
-//  Created by Келбин on 19.05.17.
+//  Created by Келбин on 27.05.17.
 //  Copyright © 2017 Келбин. All rights reserved.
 //
 
-#import "GoodsController.h"
-#import "MarketSubTreeController.h"
-#import "JSONKit.h"
 #import "CartController.h"
+#import "GoodsController.h"
 
-@interface GoodsController () {}
+@interface CartController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate> {}
 
 @end
 
-@implementation GoodsController
+@implementation CartController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self leftmenu];
-    [self.navigationItem setTitle:@"Магазин"];
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
+    [self.navigationItem setTitle:@"Корзина"];
     _context = self.persistentContainer.viewContext;
+    NSFetchRequest *req = [[NSFetchRequest alloc]init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
+    [req setEntity:entity];
+    [req setResultType:NSDictionaryResultType];
+    [req setReturnsDistinctResults:YES];
+    req.returnsObjectsAsFaults = NO;
+    NSError *error;
+    if (![_context save:&error]){
+    }
+    NSArray *fetchedObjects = [_context executeFetchRequest:req error:&error];
+    _carts = fetchedObjects;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
--(IBAction)leftmenu {
-    UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cart.png"]
-                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(pushCart:)];
-    rightbutton.tintColor = [UIColor blackColor];
-    [self.navigationItem setRightBarButtonItem:rightbutton];
-}
-
--(IBAction)pushCart:(UIButton*)sender {
-    CartController *cart = [CartController new];
-    [self.navigationController pushViewController:cart animated:YES];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark - Table view data source
 
@@ -54,7 +53,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_goods count];
+    return [_carts count];
 }
 
 
@@ -63,71 +62,56 @@
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-  /*  UIButton *addToCart = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    addToCart.frame = CGRectMake(290.0, 0, 30.0, 30.0);
-    addToCart.tintColor = [UIColor blackColor];
-    [addToCart setTitle:@"Buy" forState:UIControlStateNormal];
-    [addToCart addTarget:self action:@selector(hell:)
-     forControlEvents:UIControlEventTouchUpInside];
-    [cell addSubview:addToCart]; */
+    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_carts objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     UILabel *value = [UILabel new];
     value.frame = CGRectMake(120, 10, 30, 30);
     value.text = @"руб";
     value.textColor = [UIColor blackColor];
     value.font = [UIFont fontWithName:@"Arial" size:10];
     [cell addSubview:value];
-    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_goods objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
+    cell.imageView.frame = CGRectMake(10, 19, 10,10);
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [cell.imageView setImage:img];
-    [[cell textLabel] setText:[[_goods objectAtIndex:indexPath.row]objectForKey:@"title"]];
-    [[cell detailTextLabel] setText:[[_goods objectAtIndex:indexPath.row] objectForKey:@"price"]];
-    // addToCart.tag = indexPath.row;
+    [[cell textLabel] setText:[[_carts objectAtIndex:indexPath.row]objectForKey:@"title"]];
+    [[cell detailTextLabel] setText:[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
+    NSArray *hi = [[_carts objectAtIndex:indexPath.row] objectForKey:@"price"];
+    NSLog(@"%@", hi);
     return cell;
 }
 
-
--(IBAction)hell:(UIButton*)sender {
-    NSLog(@"%ld",(long)sender.tag);
-    _row = (int)sender.tag;
-    NSLog(@"%@",_goods[_row]);
-    CartController *carter = [[CartController alloc] init];
-    carter.carts = _goods[_row];
-    NSLog(@"%@", carter.carts);
-    
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *title = [[_goods objectAtIndex:indexPath.row] objectForKey:@"title"];
-    NSString *image = [[_goods objectAtIndex:indexPath.row] objectForKey:@"image"];
-    NSString *price = [[_goods objectAtIndex:indexPath.row] objectForKey:@"price"];
-    NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
-    [db setValue:title forKey:@"title"];
-    [db setValue:image forKey:@"image"];
-    [db setValue:price  forKey:@"price"];
-    NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
-    [req setEntity:entity];
-    req.returnsObjectsAsFaults = NO;
-    NSError *error;
-    if (![_context save:&error]){
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSString *title = [[_carts objectAtIndex:indexPath.row] objectForKey:@"title"];
+        NSString *image = [[_carts objectAtIndex:indexPath.row] objectForKey:@"image"];
+        NSString *price = [[_carts objectAtIndex:indexPath.row] objectForKey:@"price"];
+        NSLog(@"%@ and %@ and %@",title,image,price);
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
+        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"title == %@ AND image == %@ AND price == %@", title, image, price]];
+        [_context deleteObject:db];                     // В логах все нормально, но запрос на удаление не происходит
+        NSError* error = nil;
+        [_context save:&error];
+        NSLog(@"%@", fetchRequest);
+        NSMutableArray *cartselements = [NSMutableArray arrayWithArray:_carts];
+        NSLog(@"%@", cartselements);
+        [cartselements removeObjectAtIndex:indexPath.row];
+        //add code here for when you hit delete
     }
-    NSArray *fetchedObjects = [_context executeFetchRequest:req error:&error];
-    _cararr = fetchedObjects;
-    NSLog(@"%@", _cararr);
-    for (NSManagedObject *obj in fetchedObjects){
-        NSLog(@"%@", obj);
-    }
-    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return 40;
 }
-
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -226,6 +210,7 @@
         abort();
     }
 }
+
 
 
 @end
