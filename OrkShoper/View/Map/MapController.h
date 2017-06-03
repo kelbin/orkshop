@@ -14,6 +14,6 @@
 
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
-
+@property (nonatomic, strong) UITextField*addresslab;
 
 @end

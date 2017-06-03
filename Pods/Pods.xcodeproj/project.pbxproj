@@ -7,20 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A938C33E3DAED266A4A5318131E6370 /* PKCardType.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0D965F3A6213D916E324329FC2153 /* PKCardType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15CF72A11563D6E21ADE7A172F154BE4 /* PKUSAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C0451569DC4EC392B4DA515A0AFFE1 /* PKUSAddressZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16EAF4DF7E5586CA627ADD0CF7558069 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		359177434F9A117EB0F1548A0D28E9BE /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C641BFA5A2043C3345F3D55F5C2496B /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B327F812CCFB6B0BB5EF10B780A45D7 /* Pods-OrkShoper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403C01C903C3FE3CB93BC30954F7F5F /* Pods-OrkShoper-dummy.m */; };
+		28664DA4794A12762E3E3921D79EB551 /* PKCardCVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5644A350439124DBC25DB06D968A3037 /* PKCardCVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A5478CD35887779FF422F107B4A6B09 /* PaymentKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EC9470E8D974221EC60B509B3BBFB3 /* PaymentKit-dummy.m */; };
+		311A3D979D616F47505B417422536607 /* PKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3266E4C96070B90FD7C659CB16E7A226 /* PKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359177434F9A117EB0F1548A0D28E9BE /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6B086F8D2D6381E2D5C526003D7246 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36BF721E965A9CBC747B32FCBD619024 /* PKView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6343844729942DF133DC63F23836B5B /* PKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48424D44D6F5F5FF68A0BD574889690B /* PKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37178CF073158146B17F9F248545DCFC /* PKCardCVC.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54B19616C2AC52342DE31BD32D325CB1 /* PKUSAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 629571A4C90302B3629962480740B2BE /* PKUSAddressZip.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56605F148F9DB5193D2D234EDC77BAB5 /* PKCardNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = FACA3090E016E227770E1BE094BB1BB1 /* PKCardNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60A379DAA26AD59B61932556FA60F958 /* PKAddressZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4074BFF3CFE64D51CC9E95FAB2D1DD6E /* PKAddressZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		646047BB6DCEF2DDA66B7E20C7137466 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		70139882EE184AE01FAFD31AE1148BA0 /* Pods-OrkShoper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403C01C903C3FE3CB93BC30954F7F5F /* Pods-OrkShoper-dummy.m */; };
 		75E475523ACB51F40A47940CBDBB9F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8396163574026509D05052320E151DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		91F25FE3496B5716ECEEC6534747B5EA /* Pods-OrkShoperUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68C8FC43A6B7F027D02383EE41EB20 /* Pods-OrkShoperUITests-dummy.m */; };
-		96485A3A9042353EEAEEAC451241A3A6 /* JSONKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D36FA107F22BC51D33A8A8D91BFE05 /* JSONKit-dummy.m */; };
+		96485A3A9042353EEAEEAC451241A3A6 /* JSONKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AF3CC9247C2BBBA335687AD9230D6 /* JSONKit-dummy.m */; };
+		97D820ADE9D85B1DFB01F0D41544093F /* PKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087F857349D0B6AB7E56C57668E572A /* PKCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACCD003FCD050263D35CCDF904E0C4A1 /* PKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = F02D6AED75AE71D519BF8EA065373B5F /* PKAddressZip.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BABCFE838AB221573C61BFA9161108BF /* PKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9E19EFA6ED805B27DEF7B06B9DAB3 /* PKView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD9F194640EEFBB7B6C97DACA13E4BE6 /* PKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB9200BCDB76B3C6146B6D6E9E57D4 /* PKTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D30FDA290B3B3948D4AA5173CA55E4A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D4F25CE4B1693502535420888E13462D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DFEB9E6D4EB08A48A252329E9C5026BB /* PKCardExpiry.h in Headers */ = {isa = PBXBuildFile; fileRef = B7112C6F8EBDF08FD6AB7D149F89428F /* PKCardExpiry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1CC57A5563D2A0A611F2C27116D01F3 /* PKCardExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2CFC62CDCC3BA46764FDD7B1FA461D /* PKCardExpiry.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F26B9FDB0671DA324601BCAD296BECAA /* Pods-OrkShoperTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC412AC3DBB6895949CD79EBAC5AB93 /* Pods-OrkShoperTests-dummy.m */; };
-		F7D4AF33713A52FE59D22A8FEA38D3AC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B230CFD92605C4E25A62FEADA09673 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F7D4AF33713A52FE59D22A8FEA38D3AC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6C780EB79AA7E4A81C8758AD636F7 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FC1CB884664AEE62A0F59A16C56CA05D /* PKCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FA6D6CCDB410D6C2DFFAD887C7C89 /* PKCardNumber.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FDD556F8488864322E3FE400ECCE9E3C /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A40D7BF8D2A5530848433EFC212B9C3A /* PKCard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A8EF3C6A931337121A38D60E4FAB05EE /* PBXContainerItemProxy */ = {
+		6AC52538C8E985D17666AD89E564387E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E65CC01628F09F7EF6FC1D542DDB7888;
+			remoteInfo = PaymentKit;
+		};
+		986A08230F69F9B17DFA961E38AC2031 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -30,42 +56,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016B15E984B02E6F2145F6199010E2C7 /* libPods-OrkShoper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoper.a"; path = "libPods-OrkShoper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0894EFCB58894BF9F31AA99778045752 /* Pods-OrkShoperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		09816183165AD09467C3724EAF3DEA37 /* Pods-OrkShoper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoper-resources.sh"; sourceTree = "<group>"; };
-		0C641BFA5A2043C3345F3D55F5C2496B /* JSONKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		0A0575D1762FDB501746334FC7E4F02F /* discover@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "discover@2x.png"; path = "PaymentKit/Resources/Cards/discover@2x.png"; sourceTree = "<group>"; };
 		0D2BB07CF112D402F07DAD87C8D0D411 /* Pods-OrkShoperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1260CD9E298E6E24F68FEFB85F0B943B /* cvc-amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvc-amex@2x.png"; path = "PaymentKit/Resources/Cards/cvc-amex@2x.png"; sourceTree = "<group>"; };
+		1C1FA6D6CCDB410D6C2DFFAD887C7C89 /* PKCardNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCardNumber.m; path = PaymentKit/PKCardNumber.m; sourceTree = "<group>"; };
+		1D9BAC0F346EFCDEBA11063936952CA6 /* libPaymentKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPaymentKit.a; path = libPaymentKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD5F37AFB3BBE19747DEDE7AC87122F /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		205C1C7745E46E6BD7D832D9A0FFEF8B /* Pods-OrkShoper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OrkShoper-acknowledgements.plist"; sourceTree = "<group>"; };
+		2087F857349D0B6AB7E56C57668E572A /* PKCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCard.h; path = PaymentKit/PKCard.h; sourceTree = "<group>"; };
 		2403C01C903C3FE3CB93BC30954F7F5F /* Pods-OrkShoper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OrkShoper-dummy.m"; sourceTree = "<group>"; };
 		288C37BAC9FC0F85783A6482C9D93907 /* Pods-OrkShoperTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OrkShoperTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BE7462A919963B87870F93C43DFD438 /* cvc-amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvc-amex.png"; path = "PaymentKit/Resources/Cards/cvc-amex.png"; sourceTree = "<group>"; };
+		3266E4C96070B90FD7C659CB16E7A226 /* PKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKTextField.h; path = PaymentKit/PKTextField.h; sourceTree = "<group>"; };
+		37178CF073158146B17F9F248545DCFC /* PKCardCVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCardCVC.m; path = PaymentKit/PKCardCVC.m; sourceTree = "<group>"; };
+		3B9BE0AF51251C25671CF706BAD95ABC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		3C3CDF7AC4A9DA56EFC34914BDA24757 /* Pods-OrkShoperTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoperTests-frameworks.sh"; sourceTree = "<group>"; };
+		4074BFF3CFE64D51CC9E95FAB2D1DD6E /* PKAddressZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKAddressZip.h; path = PaymentKit/PKAddressZip.h; sourceTree = "<group>"; };
 		43B0BCCA7FF9B73F4FF792806EB7F2FB /* Pods-OrkShoper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoper-frameworks.sh"; sourceTree = "<group>"; };
+		4CF9A58A6D8B91BDE29AECA214D9A30F /* amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "amex@2x.png"; path = "PaymentKit/Resources/Cards/amex@2x.png"; sourceTree = "<group>"; };
+		4D6B086F8D2D6381E2D5C526003D7246 /* JSONKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		4E4F02A9BA3140403E41064853FF3FEC /* Pods-OrkShoperUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoperUITests-resources.sh"; sourceTree = "<group>"; };
-		50C31F530BAD42891EA5E251B340DC7D /* libJSONKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJSONKit.a; path = libJSONKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0A95AECBD1D189CA979EE9FA359ACE /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		4ED83029746B4125C727BD9B3191A9DC /* libJSONKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJSONKit.a; path = libJSONKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		529AF3CC9247C2BBBA335687AD9230D6 /* JSONKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONKit-dummy.m"; sourceTree = "<group>"; };
+		53B7CC452C699D9D43318CBE550E7800 /* JSONKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONKit-prefix.pch"; sourceTree = "<group>"; };
+		5644A350439124DBC25DB06D968A3037 /* PKCardCVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCardCVC.h; path = PaymentKit/PKCardCVC.h; sourceTree = "<group>"; };
+		60F9E19EFA6ED805B27DEF7B06B9DAB3 /* PKView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKView.m; path = PaymentKit/PKView.m; sourceTree = "<group>"; };
+		629571A4C90302B3629962480740B2BE /* PKUSAddressZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKUSAddressZip.m; path = PaymentKit/PKUSAddressZip.m; sourceTree = "<group>"; };
+		659A892483E30641955F9F5B2D0FAA9B /* discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = discover.png; path = PaymentKit/Resources/Cards/discover.png; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6854C7A98B15A9247AF4707B2F42F376 /* Pods-OrkShoper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoper.debug.xcconfig"; sourceTree = "<group>"; };
+		6BC0AB4FD2504B165FD310C864D506A7 /* JSONKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONKit.xcconfig; sourceTree = "<group>"; };
+		6D7111A94CC69C7E8E9329A432BD3240 /* PaymentKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PaymentKit.xcconfig; sourceTree = "<group>"; };
 		71F88ED0C2010D34EDD8A3E8DC979BC8 /* Pods-OrkShoperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoperUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		88D36FA107F22BC51D33A8A8D91BFE05 /* JSONKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONKit-dummy.m"; sourceTree = "<group>"; };
+		76C385CCD354FAC612AB714DB9FF987D /* libPods-OrkShoperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoperTests.a"; path = "libPods-OrkShoperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D651CEBE72A7225A025690108DAE76 /* libPods-OrkShoperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoperUITests.a"; path = "libPods-OrkShoperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F789203B03F1CA5FB07EA2A9E34C6B /* visa.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = visa.png; path = PaymentKit/Resources/Cards/visa.png; sourceTree = "<group>"; };
+		7EF2CB83B63083C2EF59875BE1B9F1A7 /* amex-outline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "amex-outline@2x.png"; path = "PaymentKit/Resources/Cards/amex-outline@2x.png"; sourceTree = "<group>"; };
+		82030A90830BD036929F2297DBF86788 /* diners@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "diners@2x.png"; path = "PaymentKit/Resources/Cards/diners@2x.png"; sourceTree = "<group>"; };
+		8949C8A5B1F4058AE599C76978565B47 /* jcb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jcb@2x.png"; path = "PaymentKit/Resources/Cards/jcb@2x.png"; sourceTree = "<group>"; };
 		8BC412AC3DBB6895949CD79EBAC5AB93 /* Pods-OrkShoperTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OrkShoperTests-dummy.m"; sourceTree = "<group>"; };
 		8E68C8FC43A6B7F027D02383EE41EB20 /* Pods-OrkShoperUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OrkShoperUITests-dummy.m"; sourceTree = "<group>"; };
-		917ACA94F3D8524E73970D6AFE4B1FAC /* JSONKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONKit.xcconfig; sourceTree = "<group>"; };
+		8EF6C780EB79AA7E4A81C8758AD636F7 /* JSONKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		934FF9349BEE668328EDBBDC97739758 /* visa-outline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visa-outline@2x.png"; path = "PaymentKit/Resources/Cards/visa-outline@2x.png"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95C0451569DC4EC392B4DA515A0AFFE1 /* PKUSAddressZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKUSAddressZip.h; path = PaymentKit/PKUSAddressZip.h; sourceTree = "<group>"; };
+		95DDBF2D02CB1907DCA39F816876DF66 /* placeholder@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "placeholder@2x.png"; path = "PaymentKit/Resources/Cards/placeholder@2x.png"; sourceTree = "<group>"; };
 		9886E3BF373032DDF826DF25182D8C81 /* Pods-OrkShoperUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OrkShoperUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A40D7BF8D2A5530848433EFC212B9C3A /* PKCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCard.m; path = PaymentKit/PKCard.m; sourceTree = "<group>"; };
+		A60B3269B72F317726A825624819464C /* jcb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = jcb.png; path = PaymentKit/Resources/Cards/jcb.png; sourceTree = "<group>"; };
+		A6343844729942DF133DC63F23836B5B /* PKView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKView.h; path = PaymentKit/PKView.h; sourceTree = "<group>"; };
 		AB6E0791C42DA38616968CF931F2A1F3 /* Pods-OrkShoperUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoperUITests-frameworks.sh"; sourceTree = "<group>"; };
-		AF6E11BB702F1EC443EA3A3C310BB719 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		B51F31B7EF70696AEA2406BA699AB2B1 /* JSONKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONKit-prefix.pch"; sourceTree = "<group>"; };
+		B0F6E37A846DA1F5EA9EA6C531470AFD /* cvc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvc@2x.png"; path = "PaymentKit/Resources/Cards/cvc@2x.png"; sourceTree = "<group>"; };
+		B328820134E90EF33A5582D7A07E6532 /* cvc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvc.png; path = PaymentKit/Resources/Cards/cvc.png; sourceTree = "<group>"; };
+		B48C54C9CE5E8FA74600AD00A8B636BF /* placeholder-outline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "placeholder-outline@2x.png"; path = "PaymentKit/Resources/Cards/placeholder-outline@2x.png"; sourceTree = "<group>"; };
+		B5EC9470E8D974221EC60B509B3BBFB3 /* PaymentKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PaymentKit-dummy.m"; sourceTree = "<group>"; };
+		B7112C6F8EBDF08FD6AB7D149F89428F /* PKCardExpiry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCardExpiry.h; path = PaymentKit/PKCardExpiry.h; sourceTree = "<group>"; };
 		B95A41E54540D1F8EFDE0B932B1D3DBA /* Pods-OrkShoperTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OrkShoperTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BBE4837AFDE1A8F89C61F1B18563AC94 /* Pods-OrkShoperUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OrkShoperUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0B230CFD92605C4E25A62FEADA09673 /* JSONKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		C9250A65C10001A62A044D9B038605A8 /* libPods-OrkShoperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoperUITests.a"; path = "libPods-OrkShoperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEB9200BCDB76B3C6146B6D6E9E57D4 /* PKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKTextField.m; path = PaymentKit/PKTextField.m; sourceTree = "<group>"; };
+		C0AC1A3DC195DB6EBADD2C2B595C361A /* diners.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diners.png; path = PaymentKit/Resources/Cards/diners.png; sourceTree = "<group>"; };
+		CAFF79C6CE533B11FA8282F02EC49D0F /* mastercard@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mastercard@2x.png"; path = "PaymentKit/Resources/Cards/mastercard@2x.png"; sourceTree = "<group>"; };
+		CB0B93CB370E605D6CB85A09BE6D6C03 /* placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = placeholder.png; path = PaymentKit/Resources/Cards/placeholder.png; sourceTree = "<group>"; };
+		CB2278475FBB7E889159A2470F02CDAD /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		CC2CFC62CDCC3BA46764FDD7B1FA461D /* PKCardExpiry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKCardExpiry.m; path = PaymentKit/PKCardExpiry.m; sourceTree = "<group>"; };
+		CDD27EA2EFFB358DF03A403C62C4F277 /* PaymentKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PaymentKit-prefix.pch"; sourceTree = "<group>"; };
+		CF3C10700FEB2BCBC9809606F83B1FDF /* libPods-OrkShoper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoper.a"; path = "libPods-OrkShoper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D584B52F7CD2FE91D141CBEF63F910D2 /* mastercard-outline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mastercard-outline@2x.png"; path = "PaymentKit/Resources/Cards/mastercard-outline@2x.png"; sourceTree = "<group>"; };
 		DB4B960975E1DF88CB529E65566F3A74 /* Pods-OrkShoperTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OrkShoperTests-resources.sh"; sourceTree = "<group>"; };
-		DF36981525B9DCB2C79956E4AAD7CB47 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		E3AFC6FA36114DC9215C127A2601DAA8 /* libPods-OrkShoperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-OrkShoperTests.a"; path = "libPods-OrkShoperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E62BBB805B51BFBB944D337F18FEB8C5 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		DC7EBB74D917FC387FB4954E4B7CBA88 /* amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = amex.png; path = PaymentKit/Resources/Cards/amex.png; sourceTree = "<group>"; };
+		E3C7459E0F23B162C959D5D155A5E622 /* visa@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "visa@2x.png"; path = "PaymentKit/Resources/Cards/visa@2x.png"; sourceTree = "<group>"; };
+		EBF0D965F3A6213D916E324329FC2153 /* PKCardType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCardType.h; path = PaymentKit/PKCardType.h; sourceTree = "<group>"; };
+		EC08865BCC50BFB808F0B33990109750 /* jcb-outline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jcb-outline@2x.png"; path = "PaymentKit/Resources/Cards/jcb-outline@2x.png"; sourceTree = "<group>"; };
 		EF73384487AD89D0C1DD812364BDCF63 /* Pods-OrkShoper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoper.release.xcconfig"; sourceTree = "<group>"; };
+		F02D6AED75AE71D519BF8EA065373B5F /* PKAddressZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PKAddressZip.m; path = PaymentKit/PKAddressZip.m; sourceTree = "<group>"; };
 		F64A847059EE0105CEC52B314B74F416 /* Pods-OrkShoperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OrkShoperTests.release.xcconfig"; sourceTree = "<group>"; };
+		F70C8E80DC15B361000A9AAF0243CF0B /* mastercard.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mastercard.png; path = PaymentKit/Resources/Cards/mastercard.png; sourceTree = "<group>"; };
 		F724CC2E6B9333C6F3F060A937A1FC65 /* Pods-OrkShoper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OrkShoper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F90D8F9C64211FC3845AD9D997839196 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		FACA3090E016E227770E1BE094BB1BB1 /* PKCardNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKCardNumber.h; path = PaymentKit/PKCardNumber.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +147,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		657F4A8831950445E8D27DA67BE00E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30FDA290B3B3948D4AA5173CA55E4A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69BCCAF95DC0B1ACD33F9ABB562AB596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,11 +163,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAB2980E86499DA33DBD9F164E388638 /* Frameworks */ = {
+		B8B7B0E86ED510111AA169F502A3AED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8396163574026509D05052320E151DE0 /* Foundation.framework in Frameworks */,
+				646047BB6DCEF2DDA66B7E20C7137466 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +182,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A1F1B300CB871D6EE6B75F986C10552 /* Base */ = {
+		0244F638DC8C63AEC9BE8C324C4CADE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB44393367B889AC7348274585E6462E /* Frameworks */,
+				3B9BE0AF51251C25671CF706BAD95ABC /* GoogleMaps.framework */,
+				1DD5F37AFB3BBE19747DEDE7AC87122F /* GoogleMapsCore.framework */,
 			);
-			name = Base;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20C3B5648D7813D8C09E1F1A5DF2351C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED83029746B4125C727BD9B3191A9DC /* libJSONKit.a */,
+				1D9BAC0F346EFCDEBA11063936952CA6 /* libPaymentKit.a */,
+				CF3C10700FEB2BCBC9809606F83B1FDF /* libPods-OrkShoper.a */,
+				76C385CCD354FAC612AB714DB9FF987D /* libPods-OrkShoperTests.a */,
+				77D651CEBE72A7225A025690108DAE76 /* libPods-OrkShoperUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		210F50CD2D742A7DA7F337D1DA210D67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EBB74D917FC387FB4954E4B7CBA88 /* amex.png */,
+				7EF2CB83B63083C2EF59875BE1B9F1A7 /* amex-outline@2x.png */,
+				4CF9A58A6D8B91BDE29AECA214D9A30F /* amex@2x.png */,
+				B328820134E90EF33A5582D7A07E6532 /* cvc.png */,
+				2BE7462A919963B87870F93C43DFD438 /* cvc-amex.png */,
+				1260CD9E298E6E24F68FEFB85F0B943B /* cvc-amex@2x.png */,
+				B0F6E37A846DA1F5EA9EA6C531470AFD /* cvc@2x.png */,
+				C0AC1A3DC195DB6EBADD2C2B595C361A /* diners.png */,
+				82030A90830BD036929F2297DBF86788 /* diners@2x.png */,
+				659A892483E30641955F9F5B2D0FAA9B /* discover.png */,
+				0A0575D1762FDB501746334FC7E4F02F /* discover@2x.png */,
+				A60B3269B72F317726A825624819464C /* jcb.png */,
+				EC08865BCC50BFB808F0B33990109750 /* jcb-outline@2x.png */,
+				8949C8A5B1F4058AE599C76978565B47 /* jcb@2x.png */,
+				F70C8E80DC15B361000A9AAF0243CF0B /* mastercard.png */,
+				D584B52F7CD2FE91D141CBEF63F910D2 /* mastercard-outline@2x.png */,
+				CAFF79C6CE533B11FA8282F02EC49D0F /* mastercard@2x.png */,
+				CB0B93CB370E605D6CB85A09BE6D6C03 /* placeholder.png */,
+				B48C54C9CE5E8FA74600AD00A8B636BF /* placeholder-outline@2x.png */,
+				95DDBF2D02CB1907DCA39F816876DF66 /* placeholder@2x.png */,
+				79F789203B03F1CA5FB07EA2A9E34C6B /* visa.png */,
+				934FF9349BEE668328EDBBDC97739758 /* visa-outline@2x.png */,
+				E3C7459E0F23B162C959D5D155A5E622 /* visa@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		35623FEA013D522BF0D9B3668926C70A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB2278475FBB7E889159A2470F02CDAD /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3955573F44FC9E4658200845166EA49B /* Pods-OrkShoper */ = {
@@ -137,24 +266,42 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		51928D97D0E43BD4A03B7CF16577B9F7 /* Frameworks */ = {
+		503F33822746844BE1ACF5273ECF2CA5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E62BBB805B51BFBB944D337F18FEB8C5 /* GoogleMaps.framework */,
-				AF6E11BB702F1EC443EA3A3C310BB719 /* GoogleMapsCore.framework */,
+				F90D8F9C64211FC3845AD9D997839196 /* GoogleMaps.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		668F24AD2A1AF64DBD9CE81E81F370BE /* Products */ = {
+		60B4077D7E49490432B1DD1B1153021A /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				50C31F530BAD42891EA5E251B340DC7D /* libJSONKit.a */,
-				016B15E984B02E6F2145F6199010E2C7 /* libPods-OrkShoper.a */,
-				E3AFC6FA36114DC9215C127A2601DAA8 /* libPods-OrkShoperTests.a */,
-				C9250A65C10001A62A044D9B038605A8 /* libPods-OrkShoperUITests.a */,
+				CBD6B291320B705BC9684E4A8918C098 /* Base */,
+				73D0B4898F37F3336326A32CBDCB0965 /* Maps */,
 			);
-			name = Products;
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		679905B686CF1F89B5165B2DC3104666 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0AB4FD2504B165FD310C864D506A7 /* JSONKit.xcconfig */,
+				529AF3CC9247C2BBBA335687AD9230D6 /* JSONKit-dummy.m */,
+				53B7CC452C699D9D43318CBE550E7800 /* JSONKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONKit";
+			sourceTree = "<group>";
+		};
+		73D0B4898F37F3336326A32CBDCB0965 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				0244F638DC8C63AEC9BE8C324C4CADE0 /* Frameworks */,
+				503F33822746844BE1ACF5273ECF2CA5 /* Resources */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -162,10 +309,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D7D2AF817D8302B8C2278FD839B386E6 /* Pods */,
-				668F24AD2A1AF64DBD9CE81E81F370BE /* Products */,
+				A24215734DC15D452E1BC573CCCEF8CB /* Pods */,
+				20C3B5648D7813D8C09E1F1A5DF2351C /* Products */,
 				4952579FDE94A2AC02C8284B905A8859 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		87D7AC2E41DE3B6F7326B7DFA48E8C7C /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				4D6B086F8D2D6381E2D5C526003D7246 /* JSONKit.h */,
+				8EF6C780EB79AA7E4A81C8758AD636F7 /* JSONKit.m */,
+				679905B686CF1F89B5165B2DC3104666 /* Support Files */,
+			);
+			name = JSONKit;
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		93DF2FA324B29FA30257CA379FBAC5FB /* Pods-OrkShoperTests */ = {
@@ -198,23 +356,41 @@
 			path = "Target Support Files/Pods-OrkShoperUITests";
 			sourceTree = "<group>";
 		};
-		A4D74002057648048EEE22AC23D0D5AF /* JSONKit */ = {
+		A24215734DC15D452E1BC573CCCEF8CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C641BFA5A2043C3345F3D55F5C2496B /* JSONKit.h */,
-				C0B230CFD92605C4E25A62FEADA09673 /* JSONKit.m */,
-				BE3C5C07409D50103ACE3C5F2A2A1314 /* Support Files */,
+				60B4077D7E49490432B1DD1B1153021A /* GoogleMaps */,
+				87D7AC2E41DE3B6F7326B7DFA48E8C7C /* JSONKit */,
+				A45670B8E866A0265D5DF0F54E33F0A4 /* PaymentKit */,
 			);
-			name = JSONKit;
-			path = JSONKit;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		AB44393367B889AC7348274585E6462E /* Frameworks */ = {
+		A45670B8E866A0265D5DF0F54E33F0A4 /* PaymentKit */ = {
 			isa = PBXGroup;
 			children = (
-				DF36981525B9DCB2C79956E4AAD7CB47 /* GoogleMapsBase.framework */,
+				4074BFF3CFE64D51CC9E95FAB2D1DD6E /* PKAddressZip.h */,
+				F02D6AED75AE71D519BF8EA065373B5F /* PKAddressZip.m */,
+				2087F857349D0B6AB7E56C57668E572A /* PKCard.h */,
+				A40D7BF8D2A5530848433EFC212B9C3A /* PKCard.m */,
+				5644A350439124DBC25DB06D968A3037 /* PKCardCVC.h */,
+				37178CF073158146B17F9F248545DCFC /* PKCardCVC.m */,
+				B7112C6F8EBDF08FD6AB7D149F89428F /* PKCardExpiry.h */,
+				CC2CFC62CDCC3BA46764FDD7B1FA461D /* PKCardExpiry.m */,
+				FACA3090E016E227770E1BE094BB1BB1 /* PKCardNumber.h */,
+				1C1FA6D6CCDB410D6C2DFFAD887C7C89 /* PKCardNumber.m */,
+				EBF0D965F3A6213D916E324329FC2153 /* PKCardType.h */,
+				3266E4C96070B90FD7C659CB16E7A226 /* PKTextField.h */,
+				BBEB9200BCDB76B3C6146B6D6E9E57D4 /* PKTextField.m */,
+				95C0451569DC4EC392B4DA515A0AFFE1 /* PKUSAddressZip.h */,
+				629571A4C90302B3629962480740B2BE /* PKUSAddressZip.m */,
+				A6343844729942DF133DC63F23836B5B /* PKView.h */,
+				60F9E19EFA6ED805B27DEF7B06B9DAB3 /* PKView.m */,
+				210F50CD2D742A7DA7F337D1DA210D67 /* Resources */,
+				F394D4EB8174CD97ADB058443F9B1BF6 /* Support Files */,
 			);
-			name = Frameworks;
+			name = PaymentKit;
+			path = PaymentKit;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -225,24 +401,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD654F8B69301575FCFBE4B7BF9C859C /* Maps */ = {
+		CBD6B291320B705BC9684E4A8918C098 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				51928D97D0E43BD4A03B7CF16577B9F7 /* Frameworks */,
-				F83C09C3C514239A5C83791A9BE38686 /* Resources */,
+				35623FEA013D522BF0D9B3668926C70A /* Frameworks */,
 			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		BE3C5C07409D50103ACE3C5F2A2A1314 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				917ACA94F3D8524E73970D6AFE4B1FAC /* JSONKit.xcconfig */,
-				88D36FA107F22BC51D33A8A8D91BFE05 /* JSONKit-dummy.m */,
-				B51F31B7EF70696AEA2406BA699AB2B1 /* JSONKit-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JSONKit";
+			name = Base;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -253,31 +417,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D7D2AF817D8302B8C2278FD839B386E6 /* Pods */ = {
+		F394D4EB8174CD97ADB058443F9B1BF6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA50253C288C83EA06B5550535FCB85E /* GoogleMaps */,
-				A4D74002057648048EEE22AC23D0D5AF /* JSONKit */,
+				6D7111A94CC69C7E8E9329A432BD3240 /* PaymentKit.xcconfig */,
+				B5EC9470E8D974221EC60B509B3BBFB3 /* PaymentKit-dummy.m */,
+				CDD27EA2EFFB358DF03A403C62C4F277 /* PaymentKit-prefix.pch */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DA50253C288C83EA06B5550535FCB85E /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				1A1F1B300CB871D6EE6B75F986C10552 /* Base */,
-				BD654F8B69301575FCFBE4B7BF9C859C /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		F83C09C3C514239A5C83791A9BE38686 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5D0A95AECBD1D189CA979EE9FA359ACE /* GoogleMaps.bundle */,
-			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/PaymentKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,26 +439,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8A03A847A0F5051F49EEE5FCAF5305C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A379DAA26AD59B61932556FA60F958 /* PKAddressZip.h in Headers */,
+				97D820ADE9D85B1DFB01F0D41544093F /* PKCard.h in Headers */,
+				28664DA4794A12762E3E3921D79EB551 /* PKCardCVC.h in Headers */,
+				DFEB9E6D4EB08A48A252329E9C5026BB /* PKCardExpiry.h in Headers */,
+				56605F148F9DB5193D2D234EDC77BAB5 /* PKCardNumber.h in Headers */,
+				0A938C33E3DAED266A4A5318131E6370 /* PKCardType.h in Headers */,
+				311A3D979D616F47505B417422536607 /* PKTextField.h in Headers */,
+				15CF72A11563D6E21ADE7A172F154BE4 /* PKUSAddressZip.h in Headers */,
+				36BF721E965A9CBC747B32FCBD619024 /* PKView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2FEA91F277C3E262C296BE92865A10EE /* Pods-OrkShoper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0D0CDC919498BDEF1B71327AB3151B4 /* Build configuration list for PBXNativeTarget "Pods-OrkShoper" */;
-			buildPhases = (
-				A9375413FA7145B46D22810BD95D094F /* Sources */,
-				EAB2980E86499DA33DBD9F164E388638 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C127A42121D1806E0A834E11181D078E /* PBXTargetDependency */,
-			);
-			name = "Pods-OrkShoper";
-			productName = "Pods-OrkShoper";
-			productReference = 016B15E984B02E6F2145F6199010E2C7 /* libPods-OrkShoper.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		3E887169A74940996CC5EF77C63DA941 /* Pods-OrkShoperUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B219880FA4C2787C404198C658465E23 /* Build configuration list for PBXNativeTarget "Pods-OrkShoperUITests" */;
@@ -324,7 +471,7 @@
 			);
 			name = "Pods-OrkShoperUITests";
 			productName = "Pods-OrkShoperUITests";
-			productReference = C9250A65C10001A62A044D9B038605A8 /* libPods-OrkShoperUITests.a */;
+			productReference = 77D651CEBE72A7225A025690108DAE76 /* libPods-OrkShoperUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		532FA7F4979F4E82175C47BC65A76A32 /* Pods-OrkShoperTests */ = {
@@ -340,7 +487,7 @@
 			);
 			name = "Pods-OrkShoperTests";
 			productName = "Pods-OrkShoperTests";
-			productReference = E3AFC6FA36114DC9215C127A2601DAA8 /* libPods-OrkShoperTests.a */;
+			productReference = 76C385CCD354FAC612AB714DB9FF987D /* libPods-OrkShoperTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5AB34BCC2A5390C2CD01D674EE1EBAC0 /* JSONKit */ = {
@@ -357,7 +504,42 @@
 			);
 			name = JSONKit;
 			productName = JSONKit;
-			productReference = 50C31F530BAD42891EA5E251B340DC7D /* libJSONKit.a */;
+			productReference = 4ED83029746B4125C727BD9B3191A9DC /* libJSONKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C210FBD3A5114E30B4FBA32F7830B711 /* Pods-OrkShoper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B33294FE02F90B553194D2E4EFFFF4 /* Build configuration list for PBXNativeTarget "Pods-OrkShoper" */;
+			buildPhases = (
+				E44B30458421D760C6BE14FCD17C81AF /* Sources */,
+				B8B7B0E86ED510111AA169F502A3AED2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCA60327BA4FC1156FD0051D0E785BC8 /* PBXTargetDependency */,
+				62A3868A148BD58E241A4D0099F81856 /* PBXTargetDependency */,
+			);
+			name = "Pods-OrkShoper";
+			productName = "Pods-OrkShoper";
+			productReference = CF3C10700FEB2BCBC9809606F83B1FDF /* libPods-OrkShoper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E65CC01628F09F7EF6FC1D542DDB7888 /* PaymentKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDAC6B453735B843336602FEAF78804 /* Build configuration list for PBXNativeTarget "PaymentKit" */;
+			buildPhases = (
+				384FF71C2B61DEC3B9226EB0EB907E26 /* Sources */,
+				657F4A8831950445E8D27DA67BE00E6B /* Frameworks */,
+				F8A03A847A0F5051F49EEE5FCAF5305C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentKit;
+			productName = PaymentKit;
+			productReference = 1D9BAC0F346EFCDEBA11063936952CA6 /* libPaymentKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -377,12 +559,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 668F24AD2A1AF64DBD9CE81E81F370BE /* Products */;
+			productRefGroup = 20C3B5648D7813D8C09E1F1A5DF2351C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5AB34BCC2A5390C2CD01D674EE1EBAC0 /* JSONKit */,
-				2FEA91F277C3E262C296BE92865A10EE /* Pods-OrkShoper */,
+				E65CC01628F09F7EF6FC1D542DDB7888 /* PaymentKit */,
+				C210FBD3A5114E30B4FBA32F7830B711 /* Pods-OrkShoper */,
 				532FA7F4979F4E82175C47BC65A76A32 /* Pods-OrkShoperTests */,
 				3E887169A74940996CC5EF77C63DA941 /* Pods-OrkShoperUITests */,
 			);
@@ -399,19 +582,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		384FF71C2B61DEC3B9226EB0EB907E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5478CD35887779FF422F107B4A6B09 /* PaymentKit-dummy.m in Sources */,
+				ACCD003FCD050263D35CCDF904E0C4A1 /* PKAddressZip.m in Sources */,
+				FDD556F8488864322E3FE400ECCE9E3C /* PKCard.m in Sources */,
+				48424D44D6F5F5FF68A0BD574889690B /* PKCardCVC.m in Sources */,
+				F1CC57A5563D2A0A611F2C27116D01F3 /* PKCardExpiry.m in Sources */,
+				FC1CB884664AEE62A0F59A16C56CA05D /* PKCardNumber.m in Sources */,
+				BD9F194640EEFBB7B6C97DACA13E4BE6 /* PKTextField.m in Sources */,
+				54B19616C2AC52342DE31BD32D325CB1 /* PKUSAddressZip.m in Sources */,
+				BABCFE838AB221573C61BFA9161108BF /* PKView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		816357A4EEF779E5D051D50580629098 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91F25FE3496B5716ECEEC6534747B5EA /* Pods-OrkShoperUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9375413FA7145B46D22810BD95D094F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B327F812CCFB6B0BB5EF10B780A45D7 /* Pods-OrkShoper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,14 +614,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E44B30458421D760C6BE14FCD17C81AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70139882EE184AE01FAFD31AE1148BA0 /* Pods-OrkShoper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C127A42121D1806E0A834E11181D078E /* PBXTargetDependency */ = {
+		62A3868A148BD58E241A4D0099F81856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PaymentKit;
+			target = E65CC01628F09F7EF6FC1D542DDB7888 /* PaymentKit */;
+			targetProxy = 6AC52538C8E985D17666AD89E564387E /* PBXContainerItemProxy */;
+		};
+		FCA60327BA4FC1156FD0051D0E785BC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JSONKit;
 			target = 5AB34BCC2A5390C2CD01D674EE1EBAC0 /* JSONKit */;
-			targetProxy = A8EF3C6A931337121A38D60E4FAB05EE /* PBXContainerItemProxy */;
+			targetProxy = 986A08230F69F9B17DFA961E38AC2031 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,9 +712,33 @@
 			};
 			name = Debug;
 		};
+		3EC20A746779B344D0E35596D80A9A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7111A94CC69C7E8E9329A432BD3240 /* PaymentKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PaymentKit/PaymentKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		52F49F35C981333FFAA3BFEAD6FAD9BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 917ACA94F3D8524E73970D6AFE4B1FAC /* JSONKit.xcconfig */;
+			baseConfigurationReference = 6BC0AB4FD2504B165FD310C864D506A7 /* JSONKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -531,7 +760,7 @@
 			};
 			name = Release;
 		};
-		67AD3D96530BE17993A8A6AE6ADC8EDD /* Debug */ = {
+		7C4D7105E66A6128095D98FDFAF92289 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6854C7A98B15A9247AF4707B2F42F376 /* Pods-OrkShoper.debug.xcconfig */;
 			buildSettings = {
@@ -647,30 +876,6 @@
 			};
 			name = Release;
 		};
-		C3A21C7E91D20096105905327F4EE766 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF73384487AD89D0C1DD812364BDCF63 /* Pods-OrkShoper.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		D344894919EBFEC72836579F0754D99F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71F88ED0C2010D34EDD8A3E8DC979BC8 /* Pods-OrkShoperUITests.debug.xcconfig */;
@@ -697,7 +902,7 @@
 		};
 		E158A9C9C84C78FC7AF0710AF6E46D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 917ACA94F3D8524E73970D6AFE4B1FAC /* JSONKit.xcconfig */;
+			baseConfigurationReference = 6BC0AB4FD2504B165FD310C864D506A7 /* JSONKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -706,6 +911,54 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/JSONKit/JSONKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E5D03F6D5B99E34D3DD9941DC15CB287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF73384487AD89D0C1DD812364BDCF63 /* Pods-OrkShoper.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F3AE362AF00E787DAF6A6A5C3338F733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7111A94CC69C7E8E9329A432BD3240 /* PaymentKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PaymentKit/PaymentKit-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -731,20 +984,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3BDAC6B453735B843336602FEAF78804 /* Build configuration list for PBXNativeTarget "PaymentKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE362AF00E787DAF6A6A5C3338F733 /* Debug */,
+				3EC20A746779B344D0E35596D80A9A53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B33294FE02F90B553194D2E4EFFFF4 /* Build configuration list for PBXNativeTarget "Pods-OrkShoper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4D7105E66A6128095D98FDFAF92289 /* Debug */,
+				E5D03F6D5B99E34D3DD9941DC15CB287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B219880FA4C2787C404198C658465E23 /* Build configuration list for PBXNativeTarget "Pods-OrkShoperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D344894919EBFEC72836579F0754D99F /* Debug */,
 				BC24D9EC2939D831D235BCCB3A20D7EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0D0CDC919498BDEF1B71327AB3151B4 /* Build configuration list for PBXNativeTarget "Pods-OrkShoper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67AD3D96530BE17993A8A6AE6ADC8EDD /* Debug */,
-				C3A21C7E91D20096105905327F4EE766 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

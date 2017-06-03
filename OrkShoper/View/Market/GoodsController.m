@@ -74,22 +74,23 @@
     [addToCart addTarget:self action:@selector(hell:)
      forControlEvents:UIControlEventTouchUpInside];
     [cell addSubview:addToCart]; */
-    UILabel *value = [UILabel new];
+   /* UILabel *value = [UILabel new];
     value.frame = CGRectMake(120, 10, 30, 30);
     value.text = @"руб";
     value.textColor = [UIColor blackColor];
     value.font = [UIFont fontWithName:@"Arial" size:10];
-    [cell addSubview:value];
+    [cell addSubview:value]; */
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_goods objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     [cell.imageView setImage:img];
     [[cell textLabel] setText:[[_goods objectAtIndex:indexPath.row]objectForKey:@"title"]];
-    [[cell detailTextLabel] setText:[[_goods objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    NSString* inttostr = [NSString stringWithFormat:@"%@ руб.",[[_goods objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    [[cell detailTextLabel] setText:inttostr];
     // addToCart.tag = indexPath.row;
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
     return cell;
 }
 
-
+/*
 -(IBAction)hell:(UIButton*)sender {
     NSLog(@"%ld",(long)sender.tag);
     _row = (int)sender.tag;
@@ -98,18 +99,18 @@
     carter.carts = _goods[_row];
     NSLog(@"%@", carter.carts);
     
-}
+} */
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = [[_goods objectAtIndex:indexPath.row] objectForKey:@"title"];
     NSString *image = [[_goods objectAtIndex:indexPath.row] objectForKey:@"image"];
-    NSString *price = [[_goods objectAtIndex:indexPath.row] objectForKey:@"price"];
-    NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
+    NSNumber *price = [[_goods objectAtIndex:indexPath.row] objectForKey:@"price"];
+    NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Carts" inManagedObjectContext:_context];
     [db setValue:title forKey:@"title"];
     [db setValue:image forKey:@"image"];
-    [db setValue:price  forKey:@"price"];
+    [db setValue:price forKey:@"price"];
     NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context];
     [req setEntity:entity];
     req.returnsObjectsAsFaults = NO;
     NSError *error;
@@ -190,7 +191,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"core"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Model"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

@@ -8,8 +8,12 @@
 
 #import "CartController.h"
 #import "GoodsController.h"
+#import "PayController.h"
 
-@interface CartController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate> {}
+@interface CartController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate,UIPopoverControllerDelegate> {
+    int sum;
+
+}
 
 @end
 
@@ -17,11 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self paynow];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
     [self.navigationItem setTitle:@"Корзина"];
     _context = self.persistentContainer.viewContext;
     NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context];
     [req setEntity:entity];
     [req setResultType:NSDictionaryResultType];
     [req setReturnsDistinctResults:YES];
@@ -29,9 +34,9 @@
     NSError *error;
     if (![_context save:&error]){
     }
+    _textprice = [UILabel new];
     NSArray *fetchedObjects = [_context executeFetchRequest:req error:&error];
     _carts = fetchedObjects;
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -66,20 +71,36 @@
         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_carts objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
-    UILabel *value = [UILabel new];
+    /* UILabel *value = [UILabel new];
     value.frame = CGRectMake(120, 10, 30, 30);
     value.text = @"руб";
     value.textColor = [UIColor blackColor];
     value.font = [UIFont fontWithName:@"Arial" size:10];
-    [cell addSubview:value];
-    cell.imageView.frame = CGRectMake(10, 19, 10,10);
-    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [cell addSubview:value]; */
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [cell.imageView setImage:img];
+    NSString* inttostr = [NSString stringWithFormat:@"%@ руб.",[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    [[cell detailTextLabel] setText:inttostr];
     [[cell textLabel] setText:[[_carts objectAtIndex:indexPath.row]objectForKey:@"title"]];
-    [[cell detailTextLabel] setText:[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    [[cell detailTextLabel] setText:inttostr];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
-    NSArray *hi = [[_carts objectAtIndex:indexPath.row] objectForKey:@"price"];
-    NSLog(@"%@", hi);
+    // NSArray *prices = [NSArray arrayWithObject:[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    sum = 0;
+    for (NSNumber *q in [_carts valueForKey:@"price"]){
+        sum += [q intValue];
+    }
+    NSLog(@"%d", sum);
+    _textprice.frame = CGRectMake(80, 330, 200, 100);
+    _textpri = [NSString stringWithFormat:@"Ваша сумма : %d руб.",sum];
+    _textprice.text = _textpri;
+    _textprice.textColor = [UIColor blackColor];
+    _textprice.font = [UIFont fontWithName:@"Arial" size:15];
+    [self.view addSubview:_textprice];
+    /*int sum = 0;
+    for (NSNumber *b in prices){
+        sum += [b intValue];
+    }
+    NSLog(@"%i",sum);*/
     return cell;
 }
 
@@ -92,26 +113,53 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         NSString *title = [[_carts objectAtIndex:indexPath.row] objectForKey:@"title"];
         NSString *image = [[_carts objectAtIndex:indexPath.row] objectForKey:@"image"];
-        NSString *price = [[_carts objectAtIndex:indexPath.row] objectForKey:@"price"];
+        NSNumber *price = [[_carts objectAtIndex:indexPath.row] objectForKey:@"price"];
         NSLog(@"%@ and %@ and %@",title,image,price);
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-        NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
-        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context]];
+       // NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
+        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context]];
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"title == %@ AND image == %@ AND price == %@", title, image, price]];
-        [_context deleteObject:db];                     // В логах все нормально, но запрос на удаление не происходит
         NSError* error = nil;
-        [_context save:&error];
-        NSLog(@"%@", fetchRequest);
+        NSArray* results = [_context executeFetchRequest:fetchRequest error:&error];
+        for (NSManagedObject *obj in results){
+        [_context deleteObject:obj];
+        }
+        if (![_context save:&error]){
+            NSLog(@"NE ROBIT");
+        }
         NSMutableArray *cartselements = [NSMutableArray arrayWithArray:_carts];
         NSLog(@"%@", cartselements);
         [cartselements removeObjectAtIndex:indexPath.row];
+        _carts = cartselements;
+       // [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]  withRowAnimation:UITableViewRowAnimationRight];
+        [tableView reloadData];
+        [_textprice setText:_textpri];
         //add code here for when you hit delete
     }
+}
+
+-(void)paynow {
+    UIButton *paynow = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [paynow setTitle:@"Оплатить заказ"  forState:UIControlStateNormal];
+    [paynow setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
+    paynow.frame = CGRectMake(80.0, 400.0, 160.0, 40.0);
+    paynow.layer.cornerRadius = 10;
+    [paynow addTarget:self action:@selector(pushtopaycon)
+     forControlEvents:UIControlEventTouchUpInside];
+    paynow.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:paynow];
+}
+
+-(IBAction)pushtopaycon {
+    PayController *paycon = [PayController new];
+    [self.navigationController pushViewController:paycon animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
     return 40;
 }
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -174,7 +222,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"core"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Model"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

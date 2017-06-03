@@ -15,5 +15,7 @@
 @property (nonatomic,strong)NSManagedObjectContext *context;
 @property (readonly,strong)NSPersistentContainer *persistentContainer;
 @property (nonatomic,weak)IBOutlet UIImageView *photo;
+@property (nonatomic,strong)UILabel *textprice;
+@property (nonatomic,strong)NSString *textpri;
 
 @end

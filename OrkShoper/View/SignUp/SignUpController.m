@@ -54,7 +54,7 @@
 
 -(void)insertQueryForDatabase {
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
-    NSManagedObject *users = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
+    NSManagedObject *users = [NSEntityDescription insertNewObjectForEntityForName:@"Clients" inManagedObjectContext:context];
     [users setValue:email.text forKey:@"email"];
     [users setValue:login.text forKey:@"login"];
     [users setValue:pass.text  forKey:@"password"];
@@ -129,7 +129,7 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Users" inManagedObjectContext:context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Clients" inManagedObjectContext:context];
     [req setEntity:entity];
     _fetchedObjects = [context executeFetchRequest:req error:&error];
     for (NSManagedObject *object in _fetchedObjects) {
@@ -330,7 +330,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"core"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Model"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

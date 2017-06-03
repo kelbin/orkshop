@@ -27,7 +27,7 @@
     [[self navigationItem] setHidesBackButton:YES animated:NO];
     NSString *str=[[NSBundle mainBundle] pathForResource:@"NewsForOrkShoper" ofType:@"json"];
     NSData *jsondata = [NSData dataWithContentsOfFile:str];
-    [self.navigationItem setTitle:@"Лента"];
+    [self.navigationItem setTitle:@"Новости"];
     JSONDecoder *decoder = [[JSONDecoder alloc] initWithParseOptions:JKParseOptionNone];
     json = [decoder objectWithData:jsondata];
     _hi = json[@"news"];

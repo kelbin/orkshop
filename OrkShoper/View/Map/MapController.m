@@ -13,6 +13,8 @@
     
     GMSMapView *mapView;
     CLLocation *location;
+    CLGeocoder *geocoder;
+    CLPlacemark *placemark;
 }
 
 @end
@@ -28,6 +30,8 @@
     [self firstmarket];
     [self secondmarket];
     [self thirdmarket];
+    [self.navigationItem setTitle:@"Карта"];
+    _addresslab = [[UITextField alloc] init];
 }
 
 
@@ -41,6 +45,7 @@
 
 -(void)getLocation {
     _locationManager = [[CLLocationManager alloc] init];
+    geocoder = [[CLGeocoder alloc]init];
     _locationManager.delegate = self;
     [_locationManager requestWhenInUseAuthorization];
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -48,6 +53,22 @@
     [_locationManager startUpdatingLocation];
     location = [_locationManager location];
     NSLog(@"%f",location.coordinate.latitude);
+    NSLog(@"Resolving the Address");
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
+        if (error == nil && [placemarks count] > 0) {
+            placemark = [placemarks lastObject];
+            _addresslab.text = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@\n%@",
+                                 placemark.subThoroughfare, placemark.thoroughfare,
+                                 placemark.postalCode, placemark.locality,
+                                 placemark.administrativeArea,
+                                 placemark.country];
+            NSLog(@"%@ BRBRBR", _addresslab.text);
+        } else {
+            NSLog(@"%@", error.debugDescription);
+        }
+    }
+     ];
 }
 
 
