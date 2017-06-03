@@ -5,15 +5,27 @@ PODS:
   - GoogleMaps/Maps (2.2.0):
     - GoogleMaps/Base
   - JSONKit (1.4)
+  - PaymentKit (1.0.0)
 
 DEPENDENCIES:
   - GoogleMaps (~> 2.2)
   - JSONKit (= 1.4)
+  - PaymentKit (from `https://github.com/lmcd/PaymentKit.git`)
+
+EXTERNAL SOURCES:
+  PaymentKit:
+    :git: https://github.com/lmcd/PaymentKit.git
+
+CHECKOUT OPTIONS:
+  PaymentKit:
+    :commit: dafecf0b20254af8462b4b4ba57fa59e32457fb2
+    :git: https://github.com/lmcd/PaymentKit.git
 
 SPEC CHECKSUMS:
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  PaymentKit: 2289510d64278c097d12fd97589305c2ee3d2ab2
 
-PODFILE CHECKSUM: 82ec52a8dd92ef4c084fe447da095ac38b700335
+PODFILE CHECKSUM: 833bb1c951fa4dd62516099f26f240a537f78499
 
 COCOAPODS: 1.2.1

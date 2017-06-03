@@ -9,6 +9,7 @@
 #import "MarketController.h"
 #import "JSONKit.h"
 #import "MarketSubTreeController.h"
+#import "CartController.h"
 
 @interface MarketController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate> {
     NSDictionary *json;
@@ -36,6 +37,7 @@
 }
 
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -44,9 +46,14 @@
 #pragma mark - Table view data source
 -(IBAction)leftmenu {
     UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cart.png"]
-                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
+                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(pushCart:)];
     rightbutton.tintColor = [UIColor blackColor];
     [self.navigationItem setRightBarButtonItem:rightbutton];
+}
+
+-(IBAction)pushCart:(UIButton*)sender {
+    CartController *cart = [CartController new];
+    [self.navigationController pushViewController:cart animated:YES];
 }
 
 

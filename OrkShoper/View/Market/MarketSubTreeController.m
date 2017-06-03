@@ -10,6 +10,7 @@
 #import "MarketController.h"
 #import "JSONKit.h"
 #import "GoodsController.h"
+#import "CartController.h"
 @interface MarketSubTreeController () {
     NSDictionary *json;
 }
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self leftmenu];
     _str=[[NSBundle mainBundle] pathForResource:@"market1ForOrkShop" ofType:@"json"];
     _jsondata = [NSData dataWithContentsOfFile:_str];
     [self.navigationItem setTitle:@"Магазин"];
@@ -33,6 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)leftmenu {
+    UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cart.png"]
+                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(pushCart:)];
+    rightbutton.tintColor = [UIColor blackColor];
+    [self.navigationItem setRightBarButtonItem:rightbutton];
+}
+
+-(IBAction)pushCart:(UIButton*)sender {
+    CartController *cart = [CartController new];
+    [self.navigationController pushViewController:cart animated:YES];
+}
 
 #pragma mark - Table view data source
 
