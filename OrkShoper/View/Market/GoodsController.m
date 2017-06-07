@@ -11,8 +11,11 @@
 #import "JSONKit.h"
 #import "CartController.h"
 
-@interface GoodsController () {}
+@interface GoodsController () <UITableViewDelegate> {
+    UIButton *quantityplus;
+    UIButton *quantityminus;
 
+}
 @end
 
 @implementation GoodsController
@@ -22,11 +25,32 @@
     [self leftmenu];
     [self.navigationItem setTitle:@"Магазин"];
     _context = self.persistentContainer.viewContext;
+    self.quantity = [[UILabel alloc] init];
+    quantityplus = [[UIButton alloc] init];
+    quantityminus = [[UIButton alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+-(IBAction)quaplus:(UIButton*)sender {
+    NSInteger value = [self.quantity.text integerValue];
+    value --;
+    NSString *val = [NSString stringWithFormat:@"%ld",(long)value];
+   // self.quantity.tag = (int) sender.tag;
+    self.quantity.text = val;
+}
+
+-(IBAction)quaminus:(UIButton*)sender {
+    NSInteger value = [self.quantity.text integerValue];
+    value ++;
+    NSString *val = [NSString stringWithFormat:@"%ld",(long)value];
+    self.quantity.tag = (int) sender.tag;
+    NSLog(@"%ld", (long)self.quantity.tag);
+    self.quantity.text = val;
+}
+
 
 -(IBAction)leftmenu {
     UIBarButtonItem *rightbutton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"cart.png"]
@@ -87,6 +111,32 @@
     [[cell detailTextLabel] setText:inttostr];
     // addToCart.tag = indexPath.row;
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
+    self.quantity = [UILabel new];
+    self.quantity.text = @"1";
+    self.quantity.tag = indexPath.row;
+    self.quantity.frame = CGRectMake(180, 10, 15, 15);
+    self.quantity.textColor = [UIColor blackColor];
+    self.quantity.tintColor = [UIColor blackColor];
+    self.quantity.enabled = NO;
+    quantityminus = [UIButton buttonWithType:UIButtonTypeCustom];
+    quantityminus.tag = indexPath.row;
+    [quantityminus setTitle:@"-"  forState:UIControlStateNormal];
+    [quantityminus setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
+    quantityminus.frame = CGRectMake(160, 10, 15, 15);
+    [quantityminus addTarget:self action:@selector(quaplus:)
+            forControlEvents:UIControlEventTouchUpInside];
+    quantityminus.backgroundColor = [UIColor blackColor];
+    quantityplus = [UIButton buttonWithType:UIButtonTypeCustom];
+    quantityplus.tag = indexPath.row;
+    [quantityplus setTitle:@"+"  forState:UIControlStateNormal];
+    [quantityplus setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
+    quantityplus.frame = CGRectMake(200, 10, 15, 15);
+    [quantityplus addTarget:self action:@selector(quaminus:)
+           forControlEvents:UIControlEventTouchUpInside];
+    quantityplus.backgroundColor = [UIColor blackColor];
+    [cell addSubview:self.quantity];
+    [cell addSubview:quantityplus];
+    [cell addSubview:quantityminus];
     return cell;
 }
 

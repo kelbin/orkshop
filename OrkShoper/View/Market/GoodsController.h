@@ -19,5 +19,6 @@
 @property (readonly, strong)NSPersistentContainer *persistentContainer;
 @property (nonatomic,strong)NSManagedObjectContext *context;
 @property (nonatomic,strong)NSArray *cararr;
+@property (nonatomic,strong)UILabel*quantity;
 
 @end
