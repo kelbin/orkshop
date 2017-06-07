@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "SignUpController.h"
 #import "NewsController.h"
-#import <sqlite3.h>
 
 @interface ViewController () <UITextFieldDelegate,UITabBarControllerDelegate> {
 
