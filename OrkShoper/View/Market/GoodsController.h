@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MarketSubTreeController.h"
 #import <CoreData/CoreData.h>
+#import "GoodsCustomCellController.h"
 
 
-@interface GoodsController : UITableViewController
+@interface GoodsController : UITableViewController 
 
 
 @property (nonatomic,strong)NSArray *goods;
@@ -19,6 +20,6 @@
 @property (readonly, strong)NSPersistentContainer *persistentContainer;
 @property (nonatomic,strong)NSManagedObjectContext *context;
 @property (nonatomic,strong)NSArray *cararr;
-@property (nonatomic,strong)UILabel*quantity;
+@property (nonatomic,strong)NSString *quant;
 
 @end

@@ -35,6 +35,7 @@
 		BCE1689C1EA8B33000CE8694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE1689B1EA8B33000CE8694 /* Assets.xcassets */; };
 		BCE168AA1EA8B33000CE8694 /* OrkShoperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168A91EA8B33000CE8694 /* OrkShoperTests.m */; };
 		BCE168B51EA8B33000CE8694 /* OrkShoperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */; };
+		BCFE806B1EEE9A7000222482 /* GoodsCustomCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFE806A1EEE9A7000222482 /* GoodsCustomCellController.m */; };
 		CF097F1A4373CB284029B460 /* libPods-OrkShoperTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */; };
 		CF67C0552784DB3BF6A191AF /* libPods-OrkShoperUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB56B2FAB15F3DCE204AE2D4 /* libPods-OrkShoperUITests.a */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,8 @@
 		BCE168B01EA8B33000CE8694 /* OrkShoperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrkShoperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE168B41EA8B33000CE8694 /* OrkShoperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrkShoperUITests.m; sourceTree = "<group>"; };
 		BCE168B61EA8B33000CE8694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFE80691EEE9A7000222482 /* GoodsCustomCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsCustomCellController.h; sourceTree = "<group>"; };
+		BCFE806A1EEE9A7000222482 /* GoodsCustomCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCustomCellController.m; sourceTree = "<group>"; };
 		EACFEFCA88D0F452A0595844 /* libPods-OrkShoperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrkShoperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA11C7DE772922693AE94559 /* Pods-OrkShoper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrkShoper.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrkShoper/Pods-OrkShoper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +253,8 @@
 				BC77C2E71ED82BCC00CF24F1 /* GoodsController.m */,
 				BC77C2EB1ED82BCC00CF24F1 /* MarketController.h */,
 				BC77C2EC1ED82BCC00CF24F1 /* MarketController.m */,
+				BCFE80691EEE9A7000222482 /* GoodsCustomCellController.h */,
+				BCFE806A1EEE9A7000222482 /* GoodsCustomCellController.m */,
 				BC77C2ED1ED82BCC00CF24F1 /* MarketSubTreeController.h */,
 				BC77C2EE1ED82BCC00CF24F1 /* MarketSubTreeController.m */,
 				BC2F492A1ED9C73600F1760A /* CartController.h */,
@@ -671,6 +676,7 @@
 				BC77C3031ED82BCC00CF24F1 /* MarketController.m in Sources */,
 				BC2F492C1ED9C73600F1760A /* CartController.m in Sources */,
 				BC77C3061ED82BCC00CF24F1 /* NewsController.m in Sources */,
+				BCFE806B1EEE9A7000222482 /* GoodsCustomCellController.m in Sources */,
 				BC77C3051ED82BCC00CF24F1 /* NewsCellsController.m in Sources */,
 				BC77C3041ED82BCC00CF24F1 /* MarketSubTreeController.m in Sources */,
 				BC77C3071ED82BCC00CF24F1 /* SignUpController.m in Sources */,

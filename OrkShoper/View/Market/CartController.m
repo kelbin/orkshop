@@ -12,6 +12,7 @@
 
 @interface CartController () <UITableViewDelegate,UITableViewDataSource,UITabBarControllerDelegate,UIPopoverControllerDelegate> {
     int sum;
+    UILabel *value;
 
 }
 
@@ -34,9 +35,12 @@
     NSError *error;
     if (![_context save:&error]){
     }
+    GoodsCustomCellController *goods = [GoodsCustomCellController new];
+    goods.delegate = self;
     _textprice = [UILabel new];
     NSArray *fetchedObjects = [_context executeFetchRequest:req error:&error];
     _carts = fetchedObjects;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -44,6 +48,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)test {
+    
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -71,12 +79,11 @@
         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_carts objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
-    /* UILabel *value = [UILabel new];
-    value.frame = CGRectMake(120, 10, 30, 30);
-    value.text = @"руб";
+    value = [UILabel new];
+    value.frame = CGRectMake(15, 10, 30, 30);
     value.textColor = [UIColor blackColor];
     value.font = [UIFont fontWithName:@"Arial" size:10];
-    [cell addSubview:value]; */
+    [cell addSubview:value];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [cell.imageView setImage:img];
     NSString* inttostr = [NSString stringWithFormat:@"%@ руб.",[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
@@ -86,6 +93,7 @@
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
     // NSArray *prices = [NSArray arrayWithObject:[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
     sum = 0;
+    
     for (NSNumber *q in [_carts valueForKey:@"price"]){
         sum += [q intValue];
     }

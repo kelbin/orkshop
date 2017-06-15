@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "GoodsCustomCellController.h"
 
-@interface CartController : UITableViewController
+@interface CartController : UITableViewController <CustomCellDelegate>
 
 @property (nonatomic,strong)NSArray *carts;
 @property (nonatomic,strong)NSManagedObjectContext *context;
