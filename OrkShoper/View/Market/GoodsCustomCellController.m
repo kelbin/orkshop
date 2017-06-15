@@ -54,7 +54,7 @@
 }
 
 -(void)test {
-    
+    NSLog(@"Privet");
     [self.delegate test];
 }
 

@@ -50,6 +50,7 @@
 
 -(void)test {
     
+    NSLog(@"Alder Tag");
 
 }
 
@@ -79,6 +80,7 @@
         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_carts objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
+    
     value = [UILabel new];
     value.frame = CGRectMake(15, 10, 30, 30);
     value.textColor = [UIColor blackColor];
@@ -86,18 +88,21 @@
     [cell addSubview:value];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [cell.imageView setImage:img];
+    
     NSString* inttostr = [NSString stringWithFormat:@"%@ руб.",[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
     [[cell detailTextLabel] setText:inttostr];
     [[cell textLabel] setText:[[_carts objectAtIndex:indexPath.row]objectForKey:@"title"]];
     [[cell detailTextLabel] setText:inttostr];
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
+    
     // NSArray *prices = [NSArray arrayWithObject:[[_carts objectAtIndex:indexPath.row] objectForKey:@"price"]];
     sum = 0;
-    
     for (NSNumber *q in [_carts valueForKey:@"price"]){
         sum += [q intValue];
     }
+    [self test];
     NSLog(@"%d", sum);
+    
     _textprice.frame = CGRectMake(80, 330, 200, 100);
     _textpri = [NSString stringWithFormat:@"Ваша сумма : %d руб.",sum];
     _textprice.text = _textpri;
@@ -111,6 +116,7 @@
     NSLog(@"%i",sum);*/
     return cell;
 }
+
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return YES if you want the specified item to be editable.
