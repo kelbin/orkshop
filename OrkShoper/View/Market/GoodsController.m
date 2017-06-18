@@ -80,6 +80,12 @@
     [[cell textLabel] setText:[[_goods objectAtIndex:indexPath.row]objectForKey:@"title"]];
     sum = pricer * quan;
     NSLog(@"%d", sum);
+    if ([cell.quantity.text intValue] < 2) {
+        cell.quantityminus.enabled = NO;
+    }
+    else {
+        cell.quantityminus.enabled = YES;
+    }
     _quanprice = [NSString stringWithFormat:@"%d", sum];
     NSLog(@"%@", _quanprice);
     NSString* inttostr = [NSString stringWithFormat:@"%i руб.", sum];
