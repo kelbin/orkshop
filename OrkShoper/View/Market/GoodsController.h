@@ -21,5 +21,6 @@
 @property (nonatomic,strong)NSManagedObjectContext *context;
 @property (nonatomic,strong)NSArray *cararr;
 @property (nonatomic,strong)NSString *quant;
+@property (nonatomic,strong)NSString *quanprice;
 
 @end

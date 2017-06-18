@@ -10,10 +10,9 @@
 #import "MarketSubTreeController.h"
 #import "JSONKit.h"
 #import "CartController.h"
+#import <math.h>
 
 @interface GoodsController () <UITableViewDelegate> {
-
-
 }
 @end
 
@@ -24,8 +23,6 @@
     [self leftmenu];
     [self.navigationItem setTitle:@"Магазин"];
     _context = self.persistentContainer.viewContext;
-    GoodsCustomCellController *goodscell = [[GoodsCustomCellController alloc] init];
-    NSLog(@"%@", goodscell.quantity.text);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -65,54 +62,35 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    GoodsCustomCellController *cell = [tableView dequeueReusableCellWithIdentifier:@"GoodsCustomCellController"];
+    static NSString *CellIdentifier = @"GoodsCustomCellController";
+    GoodsCustomCellController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[GoodsCustomCellController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"GoodsCustomCellController"];
+        cell = [[GoodsCustomCellController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-  /*  UIButton *addToCart = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    addToCart.frame = CGRectMake(290.0, 0, 30.0, 30.0);
-    addToCart.tintColor = [UIColor blackColor];
-    [addToCart setTitle:@"Buy" forState:UIControlStateNormal];
-    [addToCart addTarget:self action:@selector(hell:)
-     forControlEvents:UIControlEventTouchUpInside];
-    [cell addSubview:addToCart]; */
-   /* UILabel *value = [UILabel new];
-    value.frame = CGRectMake(120, 10, 30, 30);
-    value.text = @"руб";
-    value.textColor = [UIColor blackColor];
-    value.font = [UIFont fontWithName:@"Arial" size:10];
-    [cell addSubview:value]; */
+  //  [self setQuantity:cell.quantity];
     UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[_goods objectAtIndex:indexPath.row]objectForKey:@"image"]]]];
     [cell.imageView setImage:img];
+    NSLog(@"%@", cell.quantity.text);
+    int quan = [cell.quantity.text intValue];
+    int pricer = [[[_goods objectAtIndex:indexPath.row] objectForKey:@"price"] intValue];
+    //NSLog(@"%i", pricer);
+    //NSLog(@"%d", quan);
+    int sum = 0;
     [[cell textLabel] setText:[[_goods objectAtIndex:indexPath.row]objectForKey:@"title"]];
-    NSString* inttostr = [NSString stringWithFormat:@"%@ руб.",[[_goods objectAtIndex:indexPath.row] objectForKey:@"price"]];
-    
+    sum = pricer * quan;
+    NSLog(@"%d", sum);
+    _quanprice = [NSString stringWithFormat:@"%d", sum];
+    NSLog(@"%@", _quanprice);
+    NSString* inttostr = [NSString stringWithFormat:@"%i руб.", sum];
     [[cell detailTextLabel] setText:inttostr];
-    // addToCart.tag = indexPath.row;
-    /*quantitylabel = [UILabel new];
-    quantitylabel.text = @"кол-во";
-    quantitylabel.frame = CGRectMake(230, 10, 40, 15);
-    quantitylabel.font = [UIFont fontWithName:@"Arial" size:13];*/
     cell.textLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
-   /* self.quantity = [UITextField new];
-    self.quantity.text = @"1";
-    self.quantity.frame = CGRectMake(280, 10, 19, 15);
-    self.quantity.font = [UIFont fontWithName:@"Arial" size:13];
-    self.quantity.keyboardType = UIKeyboardTypeNumberPad;
-    if (self.quantity.text.length >= 3) {
-        self.quantity.text = @"1";
-        [tableView reloadData];
-    }
-    if ([self.quantity.text  isEqual: @""]){
-        self.quantity.text = @"1";
-        [tableView reloadData];
-    }
-    self.quantity.textColor = [UIColor blackColor];
-    self.quantity.tintColor = [UIColor blackColor];*/
-    //UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
-    //[tableView addGestureRecognizer:gestureRecognizer];
-   // [cell addSubview:self.quantity];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSIndexPath* indexPath = [NSIndexPath indexPathForRow: ([self.tableView numberOfRowsInSection:([self.tableView numberOfSections]-1)]-1) inSection:([self.tableView numberOfSections]-1)];
+        
+        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+        [self.tableView reloadData];
+    });
     return cell;
 }
 
@@ -129,18 +107,16 @@
 } */
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    GoodsCustomCellController *goodscell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row
-                                                                                               inSection:0]];
-    NSLog(@"%@", goodscell.quantity.text);
     NSString *title = [[_goods objectAtIndex:indexPath.row] objectForKey:@"title"];
     NSString *image = [[_goods objectAtIndex:indexPath.row] objectForKey:@"image"];
     NSNumber *price = [[_goods objectAtIndex:indexPath.row] objectForKey:@"price"];
-    NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Carts" inManagedObjectContext:_context];
+    NSLog(@"%@", price);
+    NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
     [db setValue:title forKey:@"title"];
     [db setValue:image forKey:@"image"];
     [db setValue:price forKey:@"price"];
     NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
     [req setEntity:entity];
     req.returnsObjectsAsFaults = NO;
     NSError *error;

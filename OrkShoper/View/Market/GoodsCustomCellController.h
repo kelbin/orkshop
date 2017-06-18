@@ -8,20 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@class GoodsCustomCellController;
+/*@class GoodsCustomCellController;
 @protocol CustomCellDelegate <NSObject>
 
 //-(void)layoutSubviews;
--(void)test;
+//-(void)test;
+//-(void)setQuantity:(UILabel*)quantity;
 
-@end
+@end*/
 
 @interface GoodsCustomCellController : UITableViewCell
 
-
-@property (strong) UILabel *quantity;
+@property (nonatomic,retain) UILabel *quantity;
 @property (nonatomic,strong) UIButton * quantityplus;
 @property (nonatomic,strong) UIButton *quantityminus;
-@property (nonatomic, assign) id <CustomCellDelegate> delegate;
+//@property (nonatomic, weak) id <CustomCellDelegate> delegate;
 
 @end

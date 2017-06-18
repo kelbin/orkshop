@@ -27,7 +27,7 @@
     [self.navigationItem setTitle:@"Корзина"];
     _context = self.persistentContainer.viewContext;
     NSFetchRequest *req = [[NSFetchRequest alloc]init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context];
     [req setEntity:entity];
     [req setResultType:NSDictionaryResultType];
     [req setReturnsDistinctResults:YES];
@@ -35,8 +35,8 @@
     NSError *error;
     if (![_context save:&error]){
     }
-    GoodsCustomCellController *goods = [GoodsCustomCellController new];
-    goods.delegate = self;
+    _goodscell = [GoodsCustomCellController new];
+    //_goodscell.delegate = self;
     _textprice = [UILabel new];
     NSArray *fetchedObjects = [_context executeFetchRequest:req error:&error];
     _carts = fetchedObjects;
@@ -131,7 +131,7 @@
         NSLog(@"%@ and %@ and %@",title,image,price);
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
        // NSManagedObject *db = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:_context];
-        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Carts" inManagedObjectContext:_context]];
+        [fetchRequest setEntity:[NSEntityDescription entityForName:@"Cart" inManagedObjectContext:_context]];
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"title == %@ AND image == %@ AND price == %@", title, image, price]];
         NSError* error = nil;
         NSArray* results = [_context executeFetchRequest:fetchRequest error:&error];

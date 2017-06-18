@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "GoodsCustomCellController.h"
 
-@interface CartController : UITableViewController <CustomCellDelegate>
+@interface CartController : UITableViewController 
 
 @property (nonatomic,strong)NSArray *carts;
 @property (nonatomic,strong)NSManagedObjectContext *context;
@@ -18,5 +18,6 @@
 @property (nonatomic,weak)IBOutlet UIImageView *photo;
 @property (nonatomic,strong)UILabel *textprice;
 @property (nonatomic,strong)NSString *textpri;
+@property (nonatomic,strong)GoodsCustomCellController*goodscell;
 
 @end

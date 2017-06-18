@@ -9,7 +9,7 @@
 #import "GoodsCustomCellController.h"
 
 @implementation GoodsCustomCellController
-@synthesize delegate;
+//@synthesize delegate;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -24,15 +24,14 @@
 }
 
 
--(void)layoutSubviews {
+/*-(void)layoutSubviews {
     [super layoutSubviews];
-    [self test];
     self.quantity = [UILabel new];
     self.quantityplus = [UIButton new];
     self.quantityminus = [UIButton new];
-    self.quantity.text = @"1";
     self.quantity.frame = CGRectMake(275, 10, 19, 15);
     self.quantity.font = [UIFont fontWithName:@"Arial" size:13];
+    self.quantity.text = @"1";
     
     [self.quantityplus setTitle:@"+"  forState:UIControlStateNormal];
     [self.quantityplus setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
@@ -51,11 +50,40 @@
     [self addSubview:self.quantityminus];
     [self addSubview:self.quantityplus];
     
+}*/
+
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+   self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self){
+        self.quantity = [UILabel new];
+        self.quantityplus = [UIButton new];
+        self.quantityminus = [UIButton new];
+        self.quantity.frame = CGRectMake(275, 10, 19, 15);
+        self.quantity.font = [UIFont fontWithName:@"Arial" size:13];
+        self.quantity.text = @"1";
+        
+        [self.quantityplus setTitle:@"+"  forState:UIControlStateNormal];
+        [self.quantityplus setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
+        self.quantityplus.frame = CGRectMake(250, 10, 15, 15);
+        [self.quantityplus addTarget:self action:@selector(plus)
+                    forControlEvents:UIControlEventTouchUpInside];
+        self.quantityplus.backgroundColor = [UIColor blackColor];
+        
+        [self.quantityminus setTitle:@"-"  forState:UIControlStateNormal];
+        [self.quantityminus setTitleColor:[UIColor colorWithRed:250 green:250 blue:250 alpha:.77] forState:UIControlStateNormal];
+        self.quantityminus.frame = CGRectMake(290, 10, 15, 15);
+        [self.quantityminus addTarget:self action:@selector(minus)
+                     forControlEvents:UIControlEventTouchUpInside];
+        self.quantityminus.backgroundColor = [UIColor blackColor];
+        [self addSubview:self.quantity];
+        [self addSubview:self.quantityminus];
+        [self addSubview:self.quantityplus];
+    }
+    return self;
 }
 
 -(void)test {
-    NSLog(@"Privet");
-    [self.delegate test];
+    //[self.delegate test];
 }
 
 -(IBAction)minus {
